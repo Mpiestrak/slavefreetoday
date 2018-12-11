@@ -1,0 +1,1 @@
+web: gunicorn slavefreetoday.wsgi --log-file -
