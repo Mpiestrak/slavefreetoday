@@ -1,3 +1,5 @@
 from django.contrib import admin
 
-# Register your models here.
+from main.models import Author, ViewUser, Journals, Articles
+
+admin.site.register([Author, ViewUser, Journals, Articles])
