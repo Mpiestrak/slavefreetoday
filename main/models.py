@@ -22,7 +22,7 @@ class Author(models.Model):
     def __str__(self):
         return self.last_name
 
-class Journals(models.Model):
+class Journal(models.Model):
     title = models.CharField(max_length=100)
     volumenumber = models.CharField(max_length=100)
     issuenumber = models.CharField(max_length=100)
@@ -32,7 +32,7 @@ class Journals(models.Model):
     def __str__(self):
         return self.title
 
-class Articles(models.Model):
+class Article(models.Model):
     title = models.CharField(max_length=100)
     categories = models.CharField(max_length=100)
     tags = models.CharField(max_length=100)
