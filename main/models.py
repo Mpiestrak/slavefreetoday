@@ -6,7 +6,7 @@ class ViewUser(models.Model):
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
     email = models.EmailField()
-    password = models.CharField(max_length=100)
+    password = models.CharField(max_length=100, blank=True)
 
     def __str__(self):
         return self.last_name
@@ -16,23 +16,23 @@ class Author(models.Model):
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
     email = models.EmailField()
-    password = models.CharField(max_length=100)
-    organization = models.CharField(max_length=100, null=True, blank=True)
-    description = models.TextField()
+    password = models.CharField(max_length=100, blank=True)
+    organization = models.CharField(max_length=100, blank=True)
+    description = models.TextField(blank=True)
 
     def __str__(self):
         return self.last_name
 
 
-class Journal(models.Model):
-    title = models.CharField(max_length=100)
-    volumenumber = models.CharField(max_length=100)
-    issuenumber = models.CharField(max_length=100)
-    issuedate = models.DateField()
-    description = models.TextField(null=True, blank=True)
-
-    def __str__(self):
-        return self.title
+# class Journal(models.Model):
+#     title = models.CharField(max_length=100)
+#     volumenumber = models.CharField(max_length=100)
+#     issuenumber = models.CharField(max_length=100)
+#     issuedate = models.DateField()
+#     description = models.TextField(null=True, blank=True)
+#
+#     def __str__(self):
+#         return self.title
 
 
 class Article(models.Model):
