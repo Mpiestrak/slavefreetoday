@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import styled from 'styled-components'
 
 const Nav = styled.div`
@@ -27,6 +26,9 @@ const Nav = styled.div`
     font-weight: 0px;
     left: 71px;
     top: 35px;
+    font-weight: bolder;
+    font-size: 36px;
+    height: 50px;
    }
   
   #green-text {
@@ -37,8 +39,9 @@ const Nav = styled.div`
     position: absolute;
     display: flex;
     color: white;
-    justify-content: space-evenly;
     list-style: none;
+    top: 110px;
+    left: 71px;
    }
 
 `
