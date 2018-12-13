@@ -33,7 +33,6 @@ class App extends Component {
                         <Route exact path="/donateonline" component={DonateOnline}/>
                         <Route exact path="/donations" component={Donations}/>
                         <Route exact path="/filtermodal" component={FilterModal}/>
-                        <Route exact path="/footer" component={Footer}/>
                         <Route exact path="/manuscriptinfo" component={ManuscriptInfo}/>
                         <Route exact path="/memberlist" component={MemberList}/>
                         <Route exact path="/myaccount" component={MyAccount}/>
