@@ -14,7 +14,14 @@ class Homepage extends Component {
 
                     <div className='gridContainer'>
 
-                        <div className='one'> one</div>
+                        <div className='one'>
+
+                        <div className='title'>JOURNAL OF MODERN SLAVERY</div>
+
+                             <div className='title2'>A multidisciplinary exploration of human trafficking solutions</div>
+
+
+                        </div>
                         <div className='two'>two </div>
                         <div className='three'> three</div>
                         <div className='four'> four</div>

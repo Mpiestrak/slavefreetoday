@@ -56,6 +56,7 @@ font-size: 24px;
   border:solid;
   background-image: url("https://static1.squarespace.com/static/534ad50ae4b04a5110f5ae72/583c8e0f8419c2644793c023/5a70ea9c24a6940dd0ca6713/1536700737452/_DSC4109-Modifier-2.jpg?format=1500w");
   background-size: 100% 100%;
+
 }
 
 .two{
@@ -81,6 +82,24 @@ font-size: 24px;
 
 }
 
+.title{
+border:solid;
+
+    text-align: center;
+    font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+line-height: normal;
+font-size: 36px;
+    color: #1a1a1a;
+}
+
+.title2{
+border:solid;
+
+
+     text-align: center;
+ }
 
 
 /****************************************************************************************/

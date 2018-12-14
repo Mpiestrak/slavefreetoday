@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from .models import ViewUser, Author, Journal, Article
+from .models import ViewUser, Author, Article
 
 
 class ArticleSerializer(serializers.ModelSerializer):
@@ -23,7 +23,7 @@ class ViewUserSerializer(serializers.ModelSerializer):
         fields = ('first_name', 'last_name', 'email', 'password')
 
 
-class JournalSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Journal
-        fields = ('title', 'volumenumber', 'issuenumber', 'issuedate', 'description')
+# class JournalSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = Journal
+#         fields = ('title', 'volumenumber', 'issuenumber', 'issuedate', 'description')
