@@ -15,7 +15,7 @@ class ViewUser(models.Model):
 class Author(models.Model):
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
-    email = models.EmailField()
+    email = models.EmailField(blank=True)
     password = models.CharField(max_length=100, blank=True)
     organization = models.CharField(max_length=100, blank=True)
     description = models.TextField(blank=True)

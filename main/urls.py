@@ -7,7 +7,7 @@ router = routers.DefaultRouter()
 router.register('articles', views.ArticleView)
 router.register('authors', views.AuthorView)
 router.register('viewusers', views.ViewUserView)
-router.register('journals', views.JournalView)
+# router.register('journals', views.JournalView)
 
 
 urlpatterns = [
