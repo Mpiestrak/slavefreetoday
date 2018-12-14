@@ -16,5 +16,6 @@ django-heroku = "*"
 django-import-export = "*"
 core = "*"
 
+
 [requires]
 python_version = "3.7"
