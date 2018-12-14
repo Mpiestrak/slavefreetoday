@@ -54,7 +54,7 @@ font-size: 24px;
 .one{
   grid-area: one;
   border:solid;
-  background-image: url("https://static1.squarespace.com/static/534ad50ae4b04a5110f5ae72/583c8e0f8419c2644793c023/5a70ea9c24a6940dd0ca6713/1536700737452/_DSC4109-Modifier-2.jpg?format=1500w");
+  background-image: url("./images/hpbanner.png");
   background-size: 100% 100%;
 
 }
@@ -83,23 +83,37 @@ font-size: 24px;
 }
 
 .title{
-border:solid;
 
     text-align: center;
     font-family: Roboto;
 font-style: normal;
 font-weight: bold;
 line-height: normal;
-font-size: 36px;
-    color: #1a1a1a;
+font-size: 30px;
+    color: white;
+    margin-top: 40px;
 }
 
 .title2{
-border:solid;
 
-
+color:white;
+font-size: 15px;
      text-align: center;
+    margin-top: 40px;
+    font-weight: bold;
  }
 
+.hpbutton{
+    width:250px;
+    height:60px;
+    background: #97A11F;
+    margin-left: 375px;
+    margin-top: 100px;
+    font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+    text-align: center;
+    color:white;
+}
 
 /****************************************************************************************/
