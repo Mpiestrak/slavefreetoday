@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import styled from 'styled-components'
 
 const Nav = styled.div`
-  position: absolute; 
   background: #0A2342;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
   height: 150px;
@@ -43,7 +42,7 @@ const Nav = styled.div`
     top: 110px;
     left: 71px;
    }
-
+   
 `
 
 class NavBar extends Component {
@@ -52,7 +51,7 @@ class NavBar extends Component {
       <Nav id="nav-container" className="some-class">
           <h2 id="slave-text">Slave<span id="green-text">Free Today</span></h2>
         <ul id={"nav-links"}>
-          <li>JOURNAL</li>
+          <li>ARTICLES</li>
           <li>RESOURCES</li>
           <li>MULTIMEDIA</li>
           <li>CALENDAR</li>

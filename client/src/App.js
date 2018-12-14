@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import "./App.css";
 import Homepage from "./components/Homepage";
 import ArticleInfo from "./components/ArticleInfo";
@@ -25,6 +25,7 @@ class App extends Component {
                     <div>
                         <Navbar />
                     </div>
+
 
                     <Switch>
                       <Route exact path="/articles" component={Articles}/>
