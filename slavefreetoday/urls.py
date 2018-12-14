@@ -25,4 +25,3 @@ urlpatterns = [
     url(r'^$', views.FrontendAppView.as_view()) #New URL for the index route
 ]
 
-
