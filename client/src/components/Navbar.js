@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components'
 
 const Nav = styled.div`
-  position: absolute; 
+
   background: #0A2342;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
   height: 150px;
@@ -39,6 +39,8 @@ const Nav = styled.div`
     color: white;
     justify-content: space-evenly;
     list-style: none;
+    border:solid;
+    width:100vw;
    }
 
 `

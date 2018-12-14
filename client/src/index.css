@@ -13,3 +13,74 @@ code {
     monospace;
 }
 
+
+/*Homepage*******************************************************************************/
+
+.border{
+border:solid;
+  display:flex;
+  justify-content: center;
+
+}
+
+.header{
+  width: 750px;
+height: 29px;
+
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+line-height: normal;
+font-size: 24px;
+
+}
+
+.gridContainer{
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 350px 300px 300px 300px 400px ;
+  grid-template-areas:
+
+    "one one one one"
+    "two two two two"
+    "three three three three"
+    "four four four four"
+    "five five five five";
+
+}
+
+.one{
+  grid-area: one;
+  border:solid;
+  background-image: url("https://static1.squarespace.com/static/534ad50ae4b04a5110f5ae72/583c8e0f8419c2644793c023/5a70ea9c24a6940dd0ca6713/1536700737452/_DSC4109-Modifier-2.jpg?format=1500w");
+  background-size: 100% 100%;
+}
+
+.two{
+   grid-area: two;
+  border:solid;
+  background: rgba(10, 35, 66, 0.4);
+}
+
+.three{
+   grid-area: three;
+   border:solid;
+}
+
+.four{
+   grid-area: four;
+   border:solid;
+  background: rgba(10, 35, 66, 0.4);
+}
+
+.five{
+   grid-area: five;
+   border:solid;
+
+}
+
+
+
+/****************************************************************************************/
