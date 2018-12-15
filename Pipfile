@@ -17,6 +17,7 @@ django-import-export = "*"
 core = "*"
 import-export = "*"
 pillow = "*"
+lock = "*"
 
 [requires]
 python_version = "3.7"

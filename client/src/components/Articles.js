@@ -2,11 +2,14 @@ import React, { Component } from "react";
 import axios from "axios";
 import Link from "react-router-dom/es/Link";
 import styled from "styled-components";
+import "../css/Articles.css";
 
 const Li = styled.li`
   text-decoration: none;
   color: black;
   text-transform: capitalize;
+  font-weight: bold;
+  border: 2px solid red;
 `;
 
 class Articles extends Component {
@@ -34,8 +37,15 @@ class Articles extends Component {
             <div><Link to={`/article/${article.id}`}>
             <Li>{article.title}</Li>
             </Link>
-            {article.author}
-            {article.issuedate}
+            <div className='author'>
+                {article.author}
+            </div>
+            <div className='issuedate'>
+                {article.issuedate}
+            </div>
+            <div className='abstract'>
+                {article.abstract}
+            </div>
             </div>
           ))}
         </div>

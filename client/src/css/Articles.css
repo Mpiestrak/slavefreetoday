@@ -1,4 +1,4 @@
-.border{
+/* .border{
     border:solid;
      display:flex;
      justify-content: center;
@@ -62,38 +62,23 @@
       grid-area: five;
       border:solid;
     
-    }
+    } */
     
-    .title{
-    
-       text-align: center;
-       font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    line-height: normal;
-    font-size: 30px;
-       color: white;
-       margin-top: 40px;
-    }
-    
-    .title2{
-    
-    color:white;
-    font-size: 15px;
-        text-align: center;
-       margin-top: 40px;
-       font-weight: bold;
-    }
-    
-    .hpbutton{
-       width:250px;
-       height:60px;
-       background: #97A11F;
-       margin-left: 375px;
-       margin-top: 100px;
-       font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-       text-align: center;
-       color:white;
-    }
+.author{
+    color: black;
+    text-transform: capitalize;
+    border: 2px solid blue;
+    margin: 10px;
+}
+.issuedate{
+    color: black;
+    text-transform: capitalize;
+    border: 2px solid green;
+    margin: 10px;
+}
+.abstract{
+    color: black;
+    text-transform: capitalize;
+    border: 2px solid yellow;
+    margin: 10px;
+}
