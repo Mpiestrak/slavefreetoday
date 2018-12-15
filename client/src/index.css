@@ -107,13 +107,113 @@ font-size: 15px;
     width:250px;
     height:60px;
     background: #97A11F;
-    margin-left: 375px;
+    margin-left: 430px;
     margin-top: 100px;
     font-family: Roboto;
 font-style: normal;
 font-weight: bold;
     text-align: center;
     color:white;
+}
+
+.hptitle3{
+   text-align: center;
+    font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+line-height: normal;
+font-size: 30px;
+    color: #0A2342;
+    margin-top: 25px;
+
+}
+.hptitle4 {
+
+    color: #0A2342;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.hpIconContain{
+    display:flex;
+    justify-content: space-evenly;
+    border:solid;
+    margin-top:30px;
+    height:120px;
+}
+
+.hpIconOne{
+    border:solid;
+    width:75px;
+    height:120px;
+    text-align: center;
+}
+.iconLabel{
+    margin-top: 20px;
+    color: #0A2342;
+    font-family: Open Sans;
+    line-height: normal;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.iconPic{
+    width:73px;
+    height:60px;
+    border:solid;
+    background-image: url("./images/NGO ICON.png");
+    background-size: 100% 100%;
+}
+.hpIconTwo{
+    border:solid;
+    width:75px;
+    height:120px;
+    text-align: center;
+}
+
+.iconPic2{
+    width:73px;
+    height:60px;
+    border:solid;
+    background-image: url("./images/Reports Icon.png");
+    background-size: 100% 100%;
+}
+.hpIconThree{
+      border:solid;
+     width:75px;
+        height:120px;
+
+}
+
+.iconPic3{
+    width:73px;
+    height:60px;
+    border:solid;
+    background-image: url("./images/Training ICON.png");
+    background-size: 100% 100%;
+}
+.hpIconFour{
+      border:solid;
+     width:75px;
+        height:120px;
+}
+.iconPic4{
+    width:73px;
+    height:60px;
+    border:solid;
+    background-image: url("./images/Contacts ICON.png");
+    background-size: 100% 100%;
+}
+.iconLabel4{
+    margin-top: 20px;
+    color: #0A2342;
+    font-family: Open Sans;
+    line-height: normal;
+    font-size: 20px;
+    font-weight: bold;
+    width:130px;
 }
 
 /****************************************************************************************/
