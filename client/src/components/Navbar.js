@@ -40,11 +40,11 @@ class NavBar extends Component {
       <Nav id="nav-container" className="some-class">
           <h2 id="slave-text">Slave<span id="green-text">Free Today</span></h2>
         <ul id={"nav-links"}>
-          <div>JOURNAL</div>
-          <div>RESOURCES</div>
-          <div>MULTIMEDIA</div>
-          <div>CALENDAR</div>
-          <div>ABOUT</div>
+          <li>JOURNAL</li>
+          <li>RESOURCES</li>
+          <li>MULTIMEDIA</li>
+          <li>CALENDAR</li>
+          <li>ABOUT</li>
         </ul>
 
       </Nav>

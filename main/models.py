@@ -42,6 +42,8 @@ class Article(models.Model):
     issuedate = models.DateField()
     groups = models.CharField(max_length=100)
     hits = models.IntegerField(default=0)
+    abstract = models.TextField(blank=True)
+    content = models.TextField(blank=True)
     author = models.ForeignKey(Author, on_delete=DO_NOTHING, related_name='authors')
 
     def __str__(self):

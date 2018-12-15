@@ -11,7 +11,8 @@ const Li = styled.li`
 
 class Articles extends Component {
   state = {
-    articles: []
+    articles: [],
+    authors: []
   };
 
   componentDidMount() {
@@ -24,11 +25,18 @@ class Articles extends Component {
   render() {
     return (
       <div>
+          <div className='border'>
+            <p className='header'>JOURNAL OF MODERN SLAVERY</p>
+            <p>A Multidisciplinary Exploration of Human Trafficking Solutions</p>
+          </div>
         <div>
           {this.state.articles.map(article => (
-            <Link to={`/article/${article.id}`}>
-              <Li>{article.title}</Li>
+            <div><Link to={`/article/${article.id}`}>
+            <Li>{article.title}</Li>
             </Link>
+            {article.author}
+            {article.issuedate}
+            </div>
           ))}
         </div>
       </div>
