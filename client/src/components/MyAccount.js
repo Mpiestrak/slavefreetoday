@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {AxiosInstance as axios} from "axios";
 
 class MyAccount extends Component {
 
@@ -10,7 +11,7 @@ class MyAccount extends Component {
         // make an api call to get one single user
         // On the server URL is '/api/users/:userId'
         const userId = this.props.match.params.userId
-        axios.get(`/user/${userId}`).then(res => {
+        axios.get(`api/viewuser/1`).then(res => {
             this.setState({ user: res.data })
             console.log(res)
             console.log(this.state)
@@ -28,18 +29,8 @@ class MyAccount extends Component {
         return (
             <div>
                 <h1>MyAccount</h1>
-                {/**/}
-                {/*/!* Shows some info about the user here. *!/*/}
-                {/*<h1>{this.state.user.username}</h1>*/}
-                {/*<br />*/}
-                {/*{this.state.user.image}*/}
-                {/*<br />*/}
-                {/*<div>*/}
 
-                    {/*<DeckList {...this.props} />*/}
-                {/*</div>*/}
-                {/*<DeleteUser {...this.props} />*/}
-            {/*</div>*/}
+            </div>
         );
     }
 }

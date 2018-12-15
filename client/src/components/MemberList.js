@@ -1,40 +1,40 @@
 import React, {Component} from 'react';
 import {AxiosInstance as axios} from "axios";
+import {Link} from "react-router-dom";
 
 
 
 
 class MemberList extends Component {
 
+
     state = {
-        users: []
+        authors: []
     }
 
-     getAllUsers = () => {
-        axios.get('/user').then((res) => {
+
+         //Call the user and set the state to the data recieved in response
+    getAllAuthors() {
+        axios.get("/api/authors").then((res) => {
             console.log(res)
-            this.setState({ users: res.data })
+            this.setState({ authors: res.data })
         })
     }
 
     componentDidMount() {
-        this.getAllUsers()
+        this.getAllAuthors()
     }
 
     render() {
         return (
             <div>
-                <h1>Member Directory</h1>
-                <div>
-                     {this.state.users.map((user) => (
-                        <div key={user._id}>
-                            <Link to={`/user/${user._id}`}>{user.username}</Link>
-                        </div>
-                    ))}
-                </div>
 
-
+            <h1>Member Directory</h1>
+                {/*{this.state.authors.map((author)=> (*/}
+                    {/*<div key={author.id}/>)*/}
+                {/*)}*/}
             </div>
+
         );
     }
 }
