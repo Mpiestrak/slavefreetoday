@@ -68,17 +68,48 @@
     color: black;
     text-transform: capitalize;
     border: 2px solid blue;
-    margin: 10px;
+    margin: 10px 0;
+    border-radius: inherit;
 }
 .issuedate{
-    color: black;
-    text-transform: capitalize;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 20px;
     border: 2px solid green;
-    margin: 10px;
+    border-radius: inherit;
 }
 .abstract{
     color: black;
     text-transform: capitalize;
     border: 2px solid yellow;
-    margin: 10px;
+    margin: 10px 0;
+    border-radius: inherit;
+}
+
+.titlelink{
+    text-decoration: none;
+    font-family: Roboto;
+    /* font-style: normal; */
+    font-weight: bold;
+    /* line-height: normal; */
+    font-size: 20px;
+    border: 2px solid red;
+    border-radius: inherit;
+}
+
+.articlecontainer{
+    /* border: 2px solid black; */
+    margin: 0 3% 2% 3%;
+    border-radius: 0;
+    padding: 2% 1%;
+    background: gray;
+}
+
+.headerbutton{
+    background: gray;
+    border-radius: 5px 5px 0 0;
+    margin: 2% 82% 0 3%;
+    padding: 0 1%;
 }

@@ -1,16 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import Link from "react-router-dom/es/Link";
-import styled from "styled-components";
 import "../css/Articles.css";
-
-const Li = styled.li`
-  text-decoration: none;
-  color: black;
-  text-transform: capitalize;
-  font-weight: bold;
-  border: 2px solid red;
-`;
 
 class Articles extends Component {
   state = {
@@ -32,10 +23,13 @@ class Articles extends Component {
             <p className='header'>JOURNAL OF MODERN SLAVERY</p>
             <p>A Multidisciplinary Exploration of Human Trafficking Solutions</p>
           </div>
+          <div className='headerbutton'>
+              Latest Online
+          </div>
         <div>
           {this.state.articles.map(article => (
-            <div><Link to={`/article/${article.id}`}>
-            <Li>{article.title}</Li>
+            <div className='articlecontainer'><Link to={`/article/${article.id}`}>
+            <div className='titlelink'>{article.title}</div>
             </Link>
             <div className='author'>
                 {article.author}
