@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import Link from "react-router-dom/es/Link";
 import "../css/Articles.css";
+import  "../images/anti-slavery_mural.png"
 
 class Articles extends Component {
   state = {
@@ -20,15 +21,18 @@ class Articles extends Component {
     return (
       <div>
           <div className='border'>
-            <p className='header'>JOURNAL OF MODERN SLAVERY</p>
-            <p>A Multidisciplinary Exploration of Human Trafficking Solutions</p>
+            <div className='header1'>JOURNAL OF MODERN SLAVERY</div>
+            <div className='subheader'>A Multidisciplinary Exploration of Human Trafficking Solutions</div>
+          </div>
+          <div className='carousel'>
+              <img src="#" alt="Anti Slavery Mural"/>
           </div>
           <div className='headerbutton'>
               Latest Online
           </div>
         <div>
           {this.state.articles.map(article => (
-            <div className='articlecontainer'><Link to={`/article/${article.id}`}>
+            <div className='articlecontainer'><Link  to={`/article/${article.id}`}>
             <div className='titlelink'>{article.title}</div>
             </Link>
             <div className='author'>
@@ -39,6 +43,17 @@ class Articles extends Component {
             </div>
             <div className='abstract'>
                 {article.abstract}
+            </div>
+            <div className='bottomlink'>
+                <div className='blink'>
+                    Abstract
+                </div>
+                <div className='blink'>
+                    WEB
+                </div>
+                <div className='blink'>
+                    PDF
+                </div>
             </div>
             </div>
           ))}

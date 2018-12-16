@@ -1,0 +1,167 @@
+.border {
+    background: #97A11F;
+    text-align: center;
+    height: 150px;
+    display: block;
+}
+
+.header1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 36px;
+    color: #FFFFFF;
+}
+
+.subheader {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 24px;
+    color: #FFFEF9;
+}
+
+.myButton {
+	background-color:#3f6695;
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	border-radius:20px;
+	display:flex;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: Roboto;
+	font-size:24px;
+	font-weight:bold;
+	padding:12px 25px;
+    text-decoration:none;
+    justify-content: flex-end;
+}
+
+.tabs {
+    display: flex;
+}
+
+.articlebutton {
+    background: #3B4F68;
+    border-radius: 5px 5px 0 0;
+    margin: 2% 1% 0 3%;
+    padding: 0 6% 0 1%;
+    font-family: Roboto;
+    font-size: 24px;
+    color: white;
+
+}
+
+.manuscriptbutton {
+    background: rgba(10, 35, 66, 0.2);
+    border-radius: 5px 5px 0 0;
+    margin: 2% 1% 0 0;
+    padding: 0 1%;
+    font-family: Roboto;
+    font-size: 24px;
+}
+
+.textcontent {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 18px;
+    list-style: none;
+    margin: 2%;
+}
+
+.textheader {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 24px;
+    margin: auto 2%;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+
+}
+
+.licontent {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 18px;
+    list-style: none;
+}
+
+.ulcontainer {
+    display: flex;
+    margin: 2%;
+}
+
+.column2 {
+    margin-left: 10%;
+}
+
+.firstp {
+    margin: 0 2%;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 18px;
+    list-style: none;
+}
+
+.gridContainer {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px 325px 625px 350px 250px;
+    grid-template-areas:
+
+        "one one one one"
+        "two two two two"
+        "three three three three"
+        "four four four four"
+        "five five five five";
+
+}
+
+.one {
+    grid-area: one;
+    /* border: solid; */
+    background: rgba(10, 35, 66, 0.2);
+    margin: 0 3% 2% 3%;
+}
+
+.two {
+    grid-area: two;
+    /* border: solid; */
+    margin: 0 3% 2% 3%;
+
+}
+
+.three {
+    grid-area: three;
+    /* border: solid; */
+    background: rgba(10, 35, 66, 0.2);
+    margin: 0 3% 2% 3%;
+}
+
+.four {
+    grid-area: four;
+    /* border: solid; */
+    margin: 0 3% 2% 3%;
+
+}
+
+.five {
+    grid-area: five;
+    /* border: solid; */
+    background: rgba(10, 35, 66, 0.2);
+    margin: 0 3% 2% 3%;
+}

@@ -63,53 +63,109 @@
       border:solid;
     
     } */
-    
-.author{
+
+
+
+.border {
+    background: #97A11F;
+    text-align: center;
+    height: 150px;
+    display: block;
+}
+
+.header1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 36px;
+    color: #FFFFFF;
+}
+
+.subheader {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 24px;
+    color: #FFFEF9;
+}
+
+.articlecontainer {
+    margin: 0 3% 2% 3%;
+    border-radius: 0;
+    padding: 2% 1%;
+    background: rgba(10, 35, 66, 0.2);
+}
+
+.headerbutton {
+    background: rgba(10, 35, 66, 0.2);
+    border-radius: 5px 5px 0 0;
+    margin: 2% 81% 0 3%;
+    padding: 0 1%;
+
+}
+
+.author {
     color: black;
     text-transform: capitalize;
-    border: 2px solid blue;
     margin: 10px 0;
     border-radius: inherit;
+    font-family: Open Sans;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    line-height: normal;
 }
-.issuedate{
+
+.issuedate {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     line-height: normal;
     font-size: 20px;
-    border: 2px solid green;
     border-radius: inherit;
 }
-.abstract{
+
+.abstract {
     color: black;
     text-transform: capitalize;
-    border: 2px solid yellow;
     margin: 10px 0;
     border-radius: inherit;
+    font-family: Open Sans;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    line-height: normal;
+
 }
 
-.titlelink{
+.titlelink {
+    text-transform: capitalize;
     text-decoration: none;
+    color: black;
     font-family: Roboto;
-    /* font-style: normal; */
+    font-style: normal;
     font-weight: bold;
-    /* line-height: normal; */
+    line-height: normal;
     font-size: 20px;
-    border: 2px solid red;
     border-radius: inherit;
+
 }
 
-.articlecontainer{
-    /* border: 2px solid black; */
-    margin: 0 3% 2% 3%;
-    border-radius: 0;
-    padding: 2% 1%;
-    background: gray;
+
+.bottomlink {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 70% 0 0;
 }
 
-.headerbutton{
-    background: gray;
-    border-radius: 5px 5px 0 0;
-    margin: 2% 82% 0 3%;
-    padding: 0 1%;
+.blink {
+    display: flex;
+    padding: 5px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 18px;
 }

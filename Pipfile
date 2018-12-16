@@ -14,10 +14,6 @@ djangorestframework = "*"
 gunicorn = "*"
 django-heroku = "*"
 django-import-export = "*"
-import-export = "*"
-pillow = "*"
-lock = "*"
-six = "==1.2.*"
 
 [requires]
 python_version = "3.7"
