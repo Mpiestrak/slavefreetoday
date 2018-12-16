@@ -1,0 +1,202 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+
+.box1{
+    height:850px;
+    width:100vw;
+    border-top: solid;
+    background: linear-gradient(180deg, rgba(151, 161, 31, 0.6) 0%, rgba(151, 161, 31, 0) 100%);
+
+
+}
+.box2{
+    height:850px;
+    width:100vw;
+    border:solid;
+}
+
+.title{
+
+height: 48px;
+margin-top: 30px;
+    text-align: center;
+    color: #0A2342;
+    font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+line-height: normal;
+font-size: 50px;
+text-align: center;
+}
+
+
+.body{
+    width: 670px;
+height: 207px;
+
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 24px;
+text-align: center;
+    margin: 0 auto;
+    color: #0A2342;
+    margin-top:20px;
+}
+.button {
+    width: 325px;
+    height: 82px;
+    background: #FFFFFF;
+    border: 2px solid #0A2342;
+ margin-left: 420px;
+    border-radius: 10px;
+
+}
+.buttonbody{
+    width: 300px;
+height: 29px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+line-height: normal;
+font-size: 24px;
+
+color: #0A2342;
+
+border-radius: 10px;
+}
+.dollarcontainer{
+    display:flex;
+    justify-content: space-around;
+    margin-top: 75px;
+}
+.dollarone{
+    width: 122px;
+height: 49px;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+line-height: normal;
+font-size: 36px;
+
+color: #0A2342;
+}
+.dollarcontainer1{
+    display:flex;
+    justify-content:space-around;
+    margin-top: 50px;
+}
+.dollardetail{
+    width: 260px;
+height: 164px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 24px;
+text-align: center;
+
+color: #0A2342;
+}
+
+.other{
+    width: 573px;
+height: 38px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+line-height: normal;
+font-size: 36px;
+text-align: center;
+margin: 0 auto;
+color: #0A2342;
+}
+
+.givecontainer{
+    display:flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+.give1{
+width: 380px;
+height: 400px;
+border:solid;
+
+}
+
+.title1{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 24px;
+    text-align: center;
+    color: #0A2342;
+    
+}
+
+.icon1{
+    width: 59px;
+    height: 110px;
+    background-image: url(./images/Asset\ 26.png);
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.instruction{
+
+
+border:solid;
+text-align: center;
+margin-top: 30px;
+}
+.icon2{
+    width: 131px;
+    height: 74px;
+    background-image: url(./images/Asset\ 22.png);
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.instruction2{
+    width: 376px;
+    height:192px;
+    margin: 0 auto;
+    border:solid;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.icon3{
+    width: 104px;
+    height: 97px;
+    background-image: url(./images/Asset\ 32.png);
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.instruction3{
+    width: 376px;
+    height:192px;
+    margin: 0 auto;
+    border:solid;
+    text-align: center;
+    margin-top: 50px;  
+}

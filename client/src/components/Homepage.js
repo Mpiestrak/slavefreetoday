@@ -16,7 +16,7 @@ class Homepage extends Component {
 
                         <div className='one'>
 
-                        <div className='title'>JOURNAL OF MODERN SLAVERY</div>
+                        <div className='titlemain'>JOURNAL OF MODERN SLAVERY</div>
 
                             <div className='title2'>A multidisciplinary exploration of human trafficking solutions</div>
                             <button className='hpbutton'>Create a FREE account to access the Journal</button>
