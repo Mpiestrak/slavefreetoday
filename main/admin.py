@@ -1,6 +1,6 @@
 from django.contrib import admin
 from import_export import resources
-from import_export.admin import ImportExportMixin, ImportMixin, ExportActionModelAdmin, ImportExportModelAdmin
+from import_export.admin import ImportExportModelAdmin
 from .models import Author, ViewUser, Article
 
 
@@ -24,14 +24,6 @@ class ViewUserAdmin(ImportExportModelAdmin):
     pass
 
 
-# class JournalResource(resources.ModelResource):
-#     class Meta:
-#         model = Journal
-#
-#
-# class JournalAdmin(ImportExportModelAdmin):
-#     resource_class = JournalResource
-#     pass
 
 
 class ArticleResource(resources.ModelResource):
@@ -46,5 +38,4 @@ class ArticleAdmin(ImportExportModelAdmin):
 
 admin.site.register(Author, AuthorAdmin)
 admin.site.register(ViewUser, ViewUserAdmin)
-# admin.site.register(Journal, JournalAdmin)
 admin.site.register(Article, ArticleAdmin)

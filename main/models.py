@@ -24,16 +24,6 @@ class Author(models.Model):
         return self.last_name
 
 
-# class Journal(models.Model):
-#     title = models.CharField(max_length=100)
-#     volumenumber = models.CharField(max_length=100)
-#     issuenumber = models.CharField(max_length=100)
-#     issuedate = models.DateField()
-#     description = models.TextField(null=True, blank=True)
-#
-#     def __str__(self):
-#         return self.title
-
 
 class Article(models.Model):
     title = models.CharField(max_length=100)
