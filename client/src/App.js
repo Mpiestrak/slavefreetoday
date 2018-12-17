@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import {BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
 import "./App.css";
 import Homepage from "./components/Homepage";
 import ArticleInfo from "./components/ArticleInfo";
@@ -15,20 +15,17 @@ import MyAccount from "./components/MyAccount";
 import SearchResults from "./components/SearchResults";
 import Tier2 from "./components/Tier2";
 import Navbar from "./components/Navbar";
+import SingleArticle from "./components/SingleArticle";
 
 class App extends Component {
     render() {
         return (
             <Router>
                 <div className="App">
-
-                    
-                        <Navbar />
-                    
-
-
+                    <Navbar/>
                     <Switch>
                         <Route exact path="/articles" component={Articles}/>
+                        <Route exact path="/articles/:id" component={SingleArticle}/>
                         <Route exact path="/articleinfo" component={ArticleInfo}/>
                         <Route exact path="/createaccount" component={CreateAccount}/>
                         <Route exact path="/donateonline" component={DonateOnline}/>
@@ -41,7 +38,6 @@ class App extends Component {
                         <Route exact path="/tier2" component={Tier2}/>
                         <Route path="/" component={Homepage}/>
                     </Switch>
-                        <Footer />
                 </div>
             </Router>
         );

@@ -1,6 +1,6 @@
 from django.contrib import admin
 from import_export import resources
-from import_export.admin import ImportExportModelAdmin #, ImportExportMixin, ImportMixin, ExportActionModelAdmin
+from import_export.admin import ImportExportModelAdmin
 from .models import Author, ViewUser, Article
 
 
