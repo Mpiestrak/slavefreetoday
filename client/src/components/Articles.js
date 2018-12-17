@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
 import Link from "react-router-dom/es/Link";
-import "../css/Articles.css";
 import  "../images/anti-slavery_mural.png"
 
 class Articles extends Component {

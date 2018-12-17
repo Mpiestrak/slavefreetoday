@@ -1,20 +1,20 @@
 import React, {Component} from 'react';
-import "../css/HomePage.css"
 
+import "../css/HomePage.css"
 
 class Homepage extends Component {
     render() {
         return (
             <div>
              
-                   <h1 className='header'>
+                   <h1 className='headerHP'>
                        International journal and resource hub for combating modern slavery
                    </h1>
                 
 
-                    <div className='gridContainer'>
+                    <div className='gridContainerHP'>
 
-                        <div className='one'>
+                        <div className='oneHP'>
 
                         <div className='titlemain'>JOURNAL OF MODERN SLAVERY</div>
 
@@ -22,7 +22,7 @@ class Homepage extends Component {
                             <button className='hpbutton'>Create a FREE account to access the Journal</button>
                         </div>
 
-                        <div className='two'>
+                        <div className='twoHP'>
                            <div className='hptitle3'>RESOURCES</div>
 
                             <div className='hptitle4'>International collection of resources for researchers, practitioners, students, policy makers and more</div>
@@ -67,7 +67,7 @@ class Homepage extends Component {
                           </div>
                         </div>
 
-                        <div className='three'>
+                        <div className='threeHP'>
                               <div className='hptitle5'>MULTIMEDIA</div>
 
                             <div className='hptitle6'>Our very own podcast and blog, and a collection of relevant books and videos.</div>
@@ -112,8 +112,10 @@ class Homepage extends Component {
                           </div>
 
 
-                        </div>
-                        <div className='four'>
+                     </div>
+
+
+                        <div className='fourHP'>
                                   <div className='hptitle3'>CALENDER</div>
 
                             <div className='hptitle4'>A list of global events and conferences related to issues around slavery. Add events that you know of to the calendar.</div>
@@ -145,7 +147,8 @@ class Homepage extends Component {
 
 
                         </div>
-                        <div className='five'>
+
+                        <div className='fiveHP'>
 
                          <div className='hptitle5'>ABOUT US</div>
 

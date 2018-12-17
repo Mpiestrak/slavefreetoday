@@ -16,14 +16,14 @@ body {
   
   /*Homepage*******************************************************************************/
   
-  /* .border{
+
+    .border{
   border:solid;
     display:flex;
     justify-content: center;
   
-  } */
-  
-  .header{
+  }
+  .headerHP{
   height: 29px;
   
 
@@ -35,7 +35,7 @@ body {
   text-align: center;
   }
   
-  .gridContainer{
+  .gridContainerHP{
   
     display: grid;
     grid-template-columns: 100vw;
@@ -50,31 +50,33 @@ body {
   
   }
   
-  .one{
+  .oneHP{
     grid-area: one;
     border:solid;
-    background:red;
+    background-image: url("../images/hpbanner.png");
+    background-size: 100% 100%;
   
   }
   
-  .two{
+  .twoHP{
      grid-area: two;
-  
+    
     background: rgba(10, 35, 66, 0.4);
   }
   
-  .three{
-     grid-area: three;
+  .threeHP{
+    grid-area: three;
     border:solid;
+    
   }
   
-  .four{
+  .fourHP{
      grid-area: four;
   
     background: rgba(10, 35, 66, 0.4);
   }
   
-  .five{
+  .fiveHP{
      grid-area: five;
   
   
@@ -112,6 +114,8 @@ body {
       text-align: center;
       color:white;
       font-size: 24px;
+      margin-left: 415px;
+      margin-top: 30px;
   }
   
   .hptitle3{
@@ -137,7 +141,6 @@ body {
   .hpIconContain{
       display:flex;
       justify-content: space-evenly;
-  
       margin-top:30px;
       height:120px;
   }
