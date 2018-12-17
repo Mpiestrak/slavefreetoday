@@ -21,16 +21,16 @@ class CreateAccount extends Component {
                 <Header>CREATE ACCOUNT</Header>
                 <Form>
                     <Form.Field>
-      <input placeholder='First Name' />
+      <input placeholder='First Name' style={{ width:"400px" }}/>
     </Form.Field>
     <Form.Field>
-      <input placeholder='Last Name' />
+      <input placeholder='Last Name' style={{ width:"400px" }}/>
     </Form.Field>
     <Form.Field>
-      <input placeholder='City' />
+      <input placeholder='City' style={{ width:"400px" }}/>
     </Form.Field>
     <Form.Group widths='equal'>
-    <Form.Select fluid label='' options={options} placeholder='Country' />
+    <Form.Select fluid label='' options={options} placeholder='Country' style={{ width:"400px" }}/>
     </Form.Group>
     <Form.Field>
     <Form.Field>
@@ -53,9 +53,9 @@ class CreateAccount extends Component {
       <Checkbox label='I want to receive updates for events near me and when new resources
       are added to this site.' />
       <br></br>
-    <Button color='olive' type='submit'>Next</Button>
+    <Button color='olive' type='submit'>NEXT</Button>
   </Form>
-            </Body>
+</Body>
         );
     }
 }

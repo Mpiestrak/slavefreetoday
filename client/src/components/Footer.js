@@ -21,7 +21,8 @@ color: #FFFEF9;
 list-style: none;
 line-height: 29px;
 margin-left: 80px;
-// margin-top: 1370px;
+margin-top: 30px;
+
 `
 const ResourcesTitle = styled.p`
 color: #FFFEF9;
@@ -29,24 +30,46 @@ font-weight: bold;
 list-style: none;
 `
 const ResourcesLink = styled.ul`
-position: absolute;
 color: #FFFEF9;
 list-style: none;
 line-height: 29px;
-margin-left: 267px;
-margin-top: -230px;
+margin-left: 30px;
+margin-top: 30px;
 `
 const MultimediaLink = styled.ul`
 color: #FFFEF9;
 list-style: none;
-margin-left: 437px;
+margin-left: 57px;
+margin-top: 30px;
 
 `
 const MultimediaTitle = styled.p`
 color: #FFFEF9;
 font-weight: bold;
 list-style: none;
-margin-top: -230px;
+`
+const CalendarTitle = styled.p`
+color: #FFFEF9;
+font-weight: bold;
+
+`
+const CalendarLink = styled.ul`
+color: #FFFEF9;
+list-style: none;
+margin-top: 30px;
+
+`
+const AboutUsTitle = styled.p`
+color: #FFFEF9;
+font-weight: bold;
+`
+const AboutUsLink = styled.ul`
+color: #FFFEF9;
+list-style: none;
+margin-top: 30px;
+`
+const button = styled.button`
+width=100px;
 `
 class Footer extends Component {
     render() {
@@ -76,16 +99,18 @@ class Footer extends Component {
                     <li>Videos</li>
                     <li>Books</li>
                 </MultimediaLink>
-                <u>CALENDAR
+                <CalendarLink>
+                <CalendarTitle>CALENDAR</CalendarTitle>
                     <li>View Events</li>
                     <li>Submit an Event</li>
-                </u>
-                <ul>ABOUT US
+                </CalendarLink>
+                <AboutUsLink>
+                <AboutUsTitle>ABOUT US</AboutUsTitle>
                     <li>Main Office:</li>
                     <li>178 S Peachtree St.
                         Atlanta, GA 67219
                     </li>
-                </ul>
+                </AboutUsLink>
                 <Button color='olive' type='submit'>DONATE</Button>
               </FooterBar>
         );

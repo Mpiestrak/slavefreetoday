@@ -100,11 +100,9 @@ class NavBar extends Component {
           <NavA href='#'>MULTIMEDIA</NavA>
           <NavA href='#'>CALENDAR</NavA>
           <NavA href='#'>ABOUT</NavA>
-        
         <div>
         <SignInButton>SIGN IN</SignInButton>
         <DonateButton>DONATE</DonateButton>
-        
         <NavSearch type="text"></NavSearch>
         </div>
         </Navlinks>
