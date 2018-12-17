@@ -7,7 +7,7 @@ class ManuscriptInfo extends Component {
       <div>
         <div className="border">
           <div className="header1">JOURNAL OF MODERN SLAVERY</div>
-          <div className="subheader">
+          <div className="subheader1">
             A Multidisciplinary Exploration of Human Trafficking Solutions
           </div>
         </div>
