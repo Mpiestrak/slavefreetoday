@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from "react-router-dom";
 import axios from "axios";
-
-
+import NavBar from "./Navbar";
 
 
 class MemberList extends Component {
@@ -29,7 +28,6 @@ class MemberList extends Component {
     render() {
         return (
             <div>
-
             <h1>Member Directory</h1>
                 {this.state.authors.map((author)=> (
                     <div key={author.id}>
@@ -44,6 +42,7 @@ class MemberList extends Component {
                         <br/>
                     </div>
                 ))}
+
 
 
             </div>
