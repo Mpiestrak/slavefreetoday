@@ -22,13 +22,13 @@ class App extends Component {
             <Router>
                 <div className="App">
 
-                    <div>
+                    
                         <Navbar />
-                    </div>
+                    
 
 
                     <Switch>
-                      <Route exact path="/articles" component={Articles}/>
+                        <Route exact path="/articles" component={Articles}/>
                         <Route exact path="/articleinfo" component={ArticleInfo}/>
                         <Route exact path="/createaccount" component={CreateAccount}/>
                         <Route exact path="/donateonline" component={DonateOnline}/>
@@ -41,6 +41,7 @@ class App extends Component {
                         <Route exact path="/tier2" component={Tier2}/>
                         <Route path="/" component={Homepage}/>
                     </Switch>
+                        <Footer />
                 </div>
             </Router>
         );
