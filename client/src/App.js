@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import "./App.css";
 import Homepage from "./components/Homepage";
 import ArticleInfo from "./components/ArticleInfo";
@@ -26,6 +26,7 @@ class App extends Component {
                         <Navbar />
                     
 
+
                     <Switch>
                         <Route exact path="/articles" component={Articles}/>
                         <Route exact path="/articleinfo" component={ArticleInfo}/>
@@ -33,7 +34,6 @@ class App extends Component {
                         <Route exact path="/donateonline" component={DonateOnline}/>
                         <Route exact path="/donations" component={Donations}/>
                         <Route exact path="/filtermodal" component={FilterModal}/>
-                        <Route exact path="/footer" component={Footer}/>
                         <Route exact path="/manuscriptinfo" component={ManuscriptInfo}/>
                         <Route exact path="/memberlist" component={MemberList}/>
                         <Route exact path="/myaccount" component={MyAccount}/>

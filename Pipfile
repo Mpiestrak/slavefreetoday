@@ -15,6 +15,7 @@ gunicorn = "*"
 django-heroku = "*"
 django-import-export = "*"
 core = "*"
+import-export = "*"
 
 
 [requires]
