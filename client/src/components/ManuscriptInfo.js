@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../css/ManuscriptInfo.css";
+
 
 class ManuscriptInfo extends Component {
   render() {
