@@ -36,17 +36,17 @@ class Migration(migrations.Migration):
                 ('description', models.TextField()),
             ],
         ),
-        migrations.CreateModel(
-            name='Journals',
-            fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('title', models.CharField(max_length=100)),
-                ('volumenumber', models.CharField(max_length=100)),
-                ('issuenumber', models.CharField(max_length=100)),
-                ('issuedate', models.DateField()),
-                ('description', models.TextField()),
-            ],
-        ),
+        # migrations.CreateModel(
+        #     name='Journals',
+        #     fields=[
+        #         ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+        #         ('title', models.CharField(max_length=100)),
+        #         ('volumenumber', models.CharField(max_length=100)),
+        #         ('issuenumber', models.CharField(max_length=100)),
+        #         ('issuedate', models.DateField()),
+        #         ('description', models.TextField()),
+        #     ],
+        # ),
         migrations.CreateModel(
             name='ViewUser',
             fields=[

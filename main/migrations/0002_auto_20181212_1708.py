@@ -13,9 +13,9 @@ class Migration(migrations.Migration):
         migrations.RenameModel(
             old_name='Articles',
             new_name='Article',
-        ),
-        migrations.RenameModel(
-            old_name='Journals',
-            new_name='Journal',
-        ),
+        )
+        # migrations.RenameModel(
+        #     old_name='Journals',
+        #     new_name='Journal',
+        # ),
     ]
