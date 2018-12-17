@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import ArticleSidebar from "./ArticleSidebar";
-import "../css/SingleArticle.css";
+
 import axios from "axios";
 import Link from "react-router-dom/es/Link";
+import styled from 'styled-components';
 
 class SingleArticle extends Component {
   state = {
