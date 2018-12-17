@@ -1,0 +1,247 @@
+
+.box1{
+    height:800px;
+    width:100vw;
+    border-top: solid;
+    background: linear-gradient(180deg, rgba(151, 161, 31, 0.6) 0%, rgba(151, 161, 31, 0) 100%);
+
+
+}
+.box2{
+    height:1050px;
+    width:100vw;
+    
+}
+
+.title{
+
+height: 48px;
+margin-top: 30px;
+    text-align: center;
+    color: #0A2342;
+    font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+line-height: normal;
+font-size: 50px;
+text-align: center;
+}
+
+
+.body{
+    width: 670px;
+height: 207px;
+
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 24px;
+text-align: center;
+    margin: 0 auto;
+    color: #0A2342;
+    margin-top:20px;
+}
+.button {
+    width: 325px;
+    height: 82px;
+    background: #FFFFFF;
+    border: 2px solid #0A2342;
+ margin-left: 420px;
+    border-radius: 10px;
+
+}
+.buttonbody{
+    width: 300px;
+height: 29px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+line-height: normal;
+font-size: 24px;
+
+color: #0A2342;
+
+border-radius: 10px;
+}
+.dollarcontainer{
+    display:flex;
+    justify-content: space-around;
+    margin-top: 75px;
+}
+.dollarone{
+    width: 122px;
+height: 49px;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+line-height: normal;
+font-size: 36px;
+
+color: #0A2342;
+}
+.dollarcontainer1{
+    display:flex;
+    justify-content:space-around;
+    margin-top: 50px;
+}
+.dollardetail{
+    width: 260px;
+height: 164px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 24px;
+text-align: center;
+
+color: #0A2342;
+}
+
+.other{
+    width: 573px;
+height: 38px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+line-height: normal;
+font-size: 36px;
+text-align: center;
+margin: 0 auto;
+color: #0A2342;
+}
+
+.givecontainer{
+    display:flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+.give1{
+width: 380px;
+height: 375px;
+margin-top:30px;
+
+}
+
+.title1{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 24px;
+    text-align: center;
+    color: #0A2342;
+    
+}
+
+.icon1{
+    width: 59px;
+    height: 110px;
+    background-image: url(./images/Asset\ 26.png);
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.instruction{
+
+
+
+text-align: center;
+margin-top: 30px;
+}
+.icon2{
+    width: 131px;
+    height: 74px;
+    background-image: url(./images/Asset\ 22.png);
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.instruction2{
+    width: 376px;
+    height:192px;
+    margin: 0 auto;
+    
+    text-align: center;
+    margin-top: 50px;
+}
+
+.icon3{
+    width: 104px;
+    height: 99px;
+    background-image: url(./images/Asset\ 32.png);
+    background-size: 100% 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.instruction3{
+    width: 376px;
+    height:275px;
+   
+    text-align: center;
+    margin-top: 30px;  
+}
+.subtitle{
+    width: 596px;
+height: 46px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+line-height: normal;
+font-size: 24px;
+text-align: center;
+margin: 0 auto;
+color: #0A2342;
+}
+
+.iconhand{
+    width: 124px;
+    height: 97px;
+    background-image: url(./images/Asset\ 27.png);
+    margin:0 auto;
+    margin-top: 15px;
+    
+
+}
+.list{
+
+width: 450px;
+height: 233px;
+
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 18px;
+
+color: #0A2342;
+margin-top:25px;
+
+}
+
+.listcontainer{
+    display:flex;
+    justify-content: space-evenly;
+    margin-top:20px;
+}
+.contactinfo{
+    width: 342px;
+height: 99px;
+
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 18px;
+text-align: center;
+
+color: #0A2342;
+margin: 0 auto;
+}
