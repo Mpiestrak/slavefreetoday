@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
 import styled from 'styled-components'
-
+import { Button } from 'semantic-ui-react'
 
 const FooterBar = styled.div`
 // position: absolute;
+display: flex;
 background: #0A2342;
 boxShadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
 height: 388px;
@@ -75,16 +76,17 @@ class Footer extends Component {
                     <li>Videos</li>
                     <li>Books</li>
                 </MultimediaLink>
-                <ul>CALENDAR
+                <u>CALENDAR
                     <li>View Events</li>
                     <li>Submit an Event</li>
-                </ul>
+                </u>
                 <ul>ABOUT US
                     <li>Main Office:</li>
                     <li>178 S Peachtree St.
                         Atlanta, GA 67219
                     </li>
                 </ul>
+                <Button color='olive' type='submit'>DONATE</Button>
               </FooterBar>
         );
     }
