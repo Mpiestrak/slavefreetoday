@@ -17,7 +17,7 @@ class ManuscriptInfo extends Component {
         <div className='tabs'>
           <div className="articlebutton">Latest Online</div>
           <div className="manuscriptbutton">Submit Manuscript</div>
-          <a href="http://www.scholastica.com" className="myButton">SUBMIT</a>
+          <a href="http://www.scholasticahq.com" className="myButton">SUBMIT</a>
         </div>
         <div className="gridContainer">
           <div className="one">

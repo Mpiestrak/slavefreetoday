@@ -97,6 +97,7 @@
     border-radius: 0;
     padding: 2% 1%;
     background: rgba(10, 35, 66, 0.2);
+    max-height: 20vh;
 }
 
 .headerbutton {
@@ -138,6 +139,7 @@
     font-style: normal;
     font-size: 18px;
     line-height: normal;
+    max-height: 20vh;
 
 }
 

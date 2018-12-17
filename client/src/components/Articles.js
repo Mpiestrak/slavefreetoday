@@ -34,6 +34,7 @@ class Articles extends Component {
             <div className='articlecontainer'><Link  to={`/articles/${article.id}`}>
             <div className='titlelink'>{article.title}</div>
             </Link>
+            
             <div className='author'>
                 {article.author}
             </div>

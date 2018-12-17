@@ -120,7 +120,7 @@
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 300px 325px 625px 350px 250px;
+    grid-template-rows: 15% 20% 35% 350px 250px;
     grid-template-areas:
 
         "one one one one"
