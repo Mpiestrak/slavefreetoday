@@ -1,34 +1,78 @@
 import React, {Component} from 'react';
-import {AxiosInstance as axios} from "axios";
+import axios from "axios";
 
 class MyAccount extends Component {
 
-    state = {
-        user: {}
-    }
+ state = {
+    users: [],
+    authors: []
+  };
 
-        currentUser = () => {
-        // make an api call to get one single user
-        // On the server URL is '/api/users/:userId'
-        const userId = this.props.match.params.userId
-        axios.get(`api/viewuser/1`).then(res => {
-            this.setState({ user: res.data })
-            console.log(res)
-            console.log(this.state)
-        }
+  getAUser() {
+    axios.get("/api/viewuser").then(res => {
+      this.setState({ users: res.data });
+      console.log(res.data);
+    });
+  }
 
-
-        )
-    }
+  getAnAuthor() {
+    axios.get("/api/authors").then(res => {
+      this.setState({ authors: res.data });
+      console.log(res.data);
+    });
+  }
 
     componentDidMount() {
-        this.currentUser()
+        this.getAUser()
+        this.getAnAuthor()
     }
 
     render() {
         return (
             <div>
-                <h1>MyAccount</h1>
+                <div>
+                    <h1>My Account</h1>
+                    <img src={"Profile pic here"}/>
+                </div>
+
+                {/*<div>*/}
+                    {/*<h2>Settings</h2>*/}
+                    {/*<img src={"Settings/Cogwheel Icon here"}/>*/}
+                {/*</div>*/}
+
+                {/*<div>*/}
+                    {/*<h2>View Profile</h2>*/}
+                    {/*<img src={"Eye/ Profile Icon here"}/>*/}
+                {/*</div>*/}
+
+                <div>
+                    <h2>Member Directory</h2>
+                    <img src={"Person/Directory Icon here"}/>
+                </div>
+
+                {/*<div>*/}
+                    {/*<h2>Saved Resources</h2>*/}
+                    {/*<img src={"Bookmark Icon here"}/>*/}
+                {/*</div>*/}
+                
+                {/*<div>*/}
+                    {/*<h2>Donation History</h2>*/}
+                    {/*<img src={"Dollar Icon here"}/>*/}
+                {/*</div>*/}
+
+                {/*<div>*/}
+                    {/*<h2>Submit A Manuscript</h2>*/}
+                    {/*<img src={"Scroll or sumn Icon here"}/>*/}
+                {/*</div>*/}
+
+                {/*<div>*/}
+                    {/*<h2>Become A Reviewer</h2>*/}
+                    {/*<img src={"Pencil and Paper Icon here"}/>*/}
+                {/*</div>*/}
+
+
+
+
 
             </div>
         );

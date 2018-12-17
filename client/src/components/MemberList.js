@@ -33,9 +33,13 @@ class MemberList extends Component {
             <h1>Member Directory</h1>
                 {this.state.authors.map((author)=> (
                     <div key={author.id}>
-                        {/*Image here*/}
+                        <img src={"Profile pic here"}/>
                         <h2>{author.first_name} {author.last_name}</h2>
-                        {author.email}
+                        <h2>{author.organization}</h2>
+                        <h3>{author.email}</h3>
+                        <img src={"Email icon here"}/>
+                        <img src={"LinkedIn icon here"}/>
+                        {/*We need to download these images*/}
                         <hr/>
                         <br/>
                     </div>
