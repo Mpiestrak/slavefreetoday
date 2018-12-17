@@ -7,7 +7,6 @@ import  "../images/anti-slavery_mural.png"
 class Articles extends Component {
   state = {
     articles: [],
-    authors: []
   };
 
   componentDidMount() {
@@ -32,7 +31,7 @@ class Articles extends Component {
           </div>
         <div>
           {this.state.articles.map(article => (
-            <div className='articlecontainer'><Link  to={`/article/${article.id}`}>
+            <div className='articlecontainer'><Link  to={`/articles/${article.id}`}>
             <div className='titlelink'>{article.title}</div>
             </Link>
             <div className='author'>
