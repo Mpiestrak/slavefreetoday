@@ -16,30 +16,29 @@ body {
   
   /*Homepage*******************************************************************************/
   
-  .border{
+  /* .border{
   border:solid;
     display:flex;
     justify-content: center;
   
-  }
+  } */
   
   .header{
-    width: 750px;
   height: 29px;
   
-  
+
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   line-height: normal;
   font-size: 24px;
-  
+  text-align: center;
   }
   
   .gridContainer{
   
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 100vw;
     grid-template-rows: 350px 300px 300px 300px 300px ;
     grid-template-areas:
   
@@ -53,9 +52,8 @@ body {
   
   .one{
     grid-area: one;
-  
-    background-image: url("./images/hpbanner.png");
-    background-size: 100% 100%;
+    border:solid;
+    background:red;
   
   }
   
@@ -67,7 +65,7 @@ body {
   
   .three{
      grid-area: three;
-  
+    border:solid;
   }
   
   .four{
@@ -107,8 +105,7 @@ body {
       width:330px;
       height:100px;
       background: #97A11F;
-      margin-left: 430px;
-      margin-top: 65px;
+      
       font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -164,7 +161,7 @@ body {
       width:73px;
       height:60px;
   
-      background-image: url("./images/NGO ICON.png");
+      background-image: url("../images/NGO ICON.png");
       background-size: 100% 100%;
   }
   .hpIconTwo{
@@ -178,7 +175,7 @@ body {
       width:73px;
       height:60px;
   
-      background-image: url("./images/Reports Icon.png");
+      background-image: url("../images/Reports Icon.png");
       background-size: 100% 100%;
   }
   .hpIconThree{
@@ -192,7 +189,7 @@ body {
       width:73px;
       height:60px;
   
-      background-image: url("./images/Training ICON.png");
+      background-image: url("../images/Training ICON.png");
       background-size: 100% 100%;
   }
   .hpIconFour{
@@ -204,7 +201,7 @@ body {
       width:73px;
       height:60px;
   
-      background-image: url("./images/Contacts ICON.png");
+      background-image: url("../images/Contacts ICON.png");
       background-size: 100% 100%;
   }
   .iconLabel4{
@@ -249,42 +246,42 @@ body {
       width:73px;
       height:60px;
   
-      background-image: url("./images/PODCAST ICON.png");
+      background-image: url("../images/PODCAST ICON.png");
       background-size: 100% 100%;
   }
   .iconPic6{
       width:73px;
       height:60px;
   
-      background-image: url("./images/BLOG ICON.png");
+      background-image: url("../images/BLOG ICON.png");
       background-size: 100% 100%;
   }
   .iconPic7{
       width:73px;
       height:60px;
   
-      background-image: url("./images/BOOKS ICON.png");
+      background-image: url("../images/BOOKS ICON.png");
       background-size: 100% 100%;
   }
   .iconPic8{
       width:73px;
       height:60px;
   
-      background-image: url("./images/VIDEOS ICON.png");
+      background-image: url("../images/VIDEOS ICON.png");
       background-size: 100% 100%;
   }
   .iconPic9{
       width:73px;
       height:60px;
   
-      background-image: url("./images/VIEW EVENTS ICON.png");
+      background-image: url("../images/VIEW EVENTS ICON.png");
       background-size: 100% 100%;
   }
   .iconPic10{
       width:73px;
       height:60px;
   
-      background-image: url("./images/ADD EVENTS ICON.png");
+      background-image: url("../images/ADD EVENTS ICON.png");
       background-size: 100% 100%;
   }
   .iconLabel5{
@@ -303,14 +300,14 @@ body {
       width:73px;
       height:60px;
   
-      background-image: url("./images/MISSION ICON.png");
+      background-image: url("../images/MISSION ICON.png");
       background-size: 100% 100%;
   }
   .iconPic12{
       width:73px;
       height:60px;
   
-      background-image: url("./images/LEADERSHIP ICON.png");
+      background-image: url("../images/LEADERSHIP ICON.png");
       background-size: 100% 100%;
   }
   
