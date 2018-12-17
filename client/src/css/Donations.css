@@ -46,10 +46,11 @@ text-align: center;
 .button {
     width: 325px;
     height: 82px;
-    background: #FFFFFF;
+    background:white;
     border: 2px solid #0A2342;
- margin-left: 420px;
+ margin-left: 400px;
     border-radius: 10px;
+    
 
 }
 .buttonbody{
@@ -60,9 +61,9 @@ font-family: Roboto;
 font-style: normal;
 font-weight: bold;
 line-height: normal;
-font-size: 24px;
+font-size: 18px;
 
-color: #0A2342;
+color:white;
 
 border-radius: 10px;
 }

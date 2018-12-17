@@ -17,6 +17,7 @@ import Tier2 from "./components/Tier2";
 import Navbar from "./components/Navbar";
 import SingleArticle from "./components/SingleArticle";
 
+
 class App extends Component {
     render() {
         return (

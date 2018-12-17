@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import Link from "react-router-dom/es/Link";
-import  "../images/anti-slavery_mural.png"
+import "../css/Articles.css"
 
 class Articles extends Component {
   state = {
