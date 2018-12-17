@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import '../css/Articles.css'
 import Link from "react-router-dom/es/Link";
 import  "../images/anti-slavery_mural.png"
 

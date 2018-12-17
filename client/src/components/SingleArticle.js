@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import "../css/SingleArticle.css";
 import axios from "axios";
 import Link from "react-router-dom/es/Link";
 import styled from 'styled-components';
