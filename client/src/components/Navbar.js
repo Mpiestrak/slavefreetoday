@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import styled from 'styled-components'
 
 const Nav = styled.div`
-// position: absolute; 
   background: #0A2342;
   boxShadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
   height: 20vh;
@@ -12,8 +11,6 @@ const Nav = styled.div`
 `
 
   const Slavetext = styled.div`
-    // display: flex;
-    // justify-content: center;
     position: relative;
     color: white;
     margin-left: 45px;
@@ -27,16 +24,14 @@ const Nav = styled.div`
     font-weight: bold;
   `
 
-  const Navlinks = styled.ul `
+  const Navlinks = styled.div `
     display: flex;
-    justify-content: space around;
-    position: absolute;
-    padding: 15px;
+    justify-content: space-around;
+    margin: 0 30px;
     // color: white;
     // list-style: none;
     // text-decoration: none;
     // top: 110px;
-    left: 71px;
 `
 const NavA = styled.a`
     text-decoration: none;
@@ -48,20 +43,20 @@ const NavA = styled.a`
     
 `
 const NavSearch = styled.input`
-    position: absolute;
+    // position: absolute;
     // padding: 0px 0px 0px 0px;
     width: 304px;
     height: 32px;
-    left: 999px;
+    // left: 999px;
     top: 108px;
   `
 const SignInButton = styled.button`
-    position: relative;
+    // position: relative;
     width: 146.84px;
     height: 45px;
     padding: 0px 0px 0px 0px;
-    margin-left: 999px;
-    margin-top: 2px;
+    // margin-left: 999px;
+    // margin-top: 2px;
     font-family: Open Sans;
     font-style: normal;
     font-weight: bold;
@@ -73,7 +68,7 @@ const SignInButton = styled.button`
 `
 
 const DonateButton = styled.button`
-  position: absolute;
+  // position: absolute;
     // width: 99.64px;
     // height: 34.62px;
     // left: 1027.08px;
@@ -105,13 +100,14 @@ class NavBar extends Component {
           <NavA href='#'>MULTIMEDIA</NavA>
           <NavA href='#'>CALENDAR</NavA>
           <NavA href='#'>ABOUT</NavA>
-        </Navlinks>
+        
         <div>
         <SignInButton>SIGN IN</SignInButton>
         <DonateButton>DONATE</DonateButton>
-        </div>
-        <NavSearch type="text"></NavSearch>
         
+        <NavSearch type="text"></NavSearch>
+        </div>
+        </Navlinks>
       </Nav>
     );
   }
