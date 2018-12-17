@@ -22,8 +22,3 @@ class ViewUserSerializer(serializers.ModelSerializer):
         model = ViewUser
         fields = ('first_name', 'last_name', 'email', 'password')
 
-
-# class JournalSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = Journal
-#         fields = ('title', 'volumenumber', 'issuenumber', 'issuedate', 'description')

@@ -23,15 +23,7 @@ class ViewUserAdmin(ImportExportModelAdmin):
     resource_class = ViewUserResource
     pass
 
-#
-# class JournalResource(resources.ModelResource):
-#     class Meta:
-#         model = Journal
-#
-#
-# class JournalAdmin(ImportExportModelAdmin):
-#     resource_class = JournalResource
-#     pass
+
 
 
 class ArticleResource(resources.ModelResource):
@@ -46,5 +38,4 @@ class ArticleAdmin(ImportExportModelAdmin):
 
 admin.site.register(Author, AuthorAdmin)
 admin.site.register(ViewUser, ViewUserAdmin)
-# admin.site.register(Journal, JournalAdmin)
 admin.site.register(Article, ArticleAdmin)
