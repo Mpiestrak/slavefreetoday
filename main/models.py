@@ -25,7 +25,6 @@ class Author(models.Model):
         return self.last_name
 
 
-
 class Article(models.Model):
     title = models.CharField(max_length=100)
     categories = models.CharField(max_length=100)
