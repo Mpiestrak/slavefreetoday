@@ -5,11 +5,12 @@ import { Link } from "react-router-dom";
 class AuthorAccount extends Component {
 
     state = {
-        author: []
+        author: {}
     };
 
     getAnAuthor() {
-        axios.get("/api/authors/${id}").then(res => {
+        const author = this.props.match.params.authorId
+        axios.get(`/api/authors/${author}`).then(res => {
             this.setState({ author: res.data });
             console.log(res.data);
         });
@@ -26,7 +27,10 @@ class AuthorAccount extends Component {
                 <div>
                     <h1>My Account</h1>
                     <img src={"Profile pic here"} />
+                </div>
 
+                <div>
+                    <p>{this.state.author.first_name}</p>
                 </div>
 
                 <div>

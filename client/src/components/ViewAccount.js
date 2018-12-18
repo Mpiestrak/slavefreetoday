@@ -9,7 +9,8 @@ class ViewAccount extends Component {
     };
 
     getAUser() {
-        axios.get("/api/viewusers/${id}").then(res => {
+        const id = this.props.match.params.id
+        axios.get(`/api/viewusers/${id}`).then(res => {
             this.setState({ user: res.data });
             console.log(res.data);
         });
@@ -40,7 +41,7 @@ class ViewAccount extends Component {
                 </div>
 
                 <div>
-                    <Link to={'/memberlist'}><h2>Member Directory</h2></Link>
+                    <Link to={`/memberlist`}><h2>Member Directory</h2></Link>
                     <img src={"Person/Directory Icon here"} />
                 </div>
 
