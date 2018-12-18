@@ -19,6 +19,7 @@ class SearchResults extends Component {
       }
       
       handleInputChange = (e) => {
+          
           const searchWord = {...this.searchArticle}
           searchWord[e.target.name] = e.target.value
         this.setState({
@@ -34,17 +35,13 @@ class SearchResults extends Component {
       }
 
       
-      handleSubmit=()=> {
-          
-          console.log("articles", this.state.searchArticle)
-this.state.articles.map((article, i) => {
-    const has = article.abstract.search(this.state.searchArticle)
-    if(has>0){
-        console.log(article)
-    }else{
-        console.log("noooo")
+      handleSubmit=(e)=> {
+          e.preventDefault()
+        console.log("search", this.state.searchArticle)
+    this.state.articles.filter(article => {console.log(article.abstract.search(this.state.searchArticle)==1)
+        
     }
-})
+    )
 
 
         
@@ -53,25 +50,27 @@ this.state.articles.map((article, i) => {
         return (
             <div>
 
-            { this.state.articles.map((article) => (
-                
-              <div key={article._id}>
-               <h1>{article.abstract}</h1> {article.content}
-                
-                
-              </div>
-            )) }
+       
  
         <Form>
         <Input
         name="searchArticle"
           placeholder="Search for..."
           ref={input => this.search = input}
-          onChange={this.handleInputChange}
+          onBlur={this.handleInputChange}
         />
         <p>{this.state.searchName}</p>
         <Button onClick={this.handleSubmit}>Get Article</Button>
       </Form>
+
+      { this.state.articles.map((article) => (
+                
+                <div key={article._id}>
+                 <h1>{article.abstract}</h1> {article.content}
+                  
+                  
+                </div>
+        )) }
             </div>
         );
     }

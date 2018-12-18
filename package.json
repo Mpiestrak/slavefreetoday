@@ -5,6 +5,7 @@
     "postinstall": "npm run build && echo 'Client built!'"
   },
   "dependencies": {
+    "react-iframe": "^1.3.3",
     "react-router-dom": "^4.3.1"
   }
 }

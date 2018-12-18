@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
-
 import "../css/HomePage.css"
-
+import Link from "react-router-dom/es/Link";
 class Homepage extends Component {
     render() {
         return (
@@ -19,7 +18,7 @@ class Homepage extends Component {
                         <div className='titlemain'>JOURNAL OF MODERN SLAVERY</div>
 
                             <div className='title2'>A multidisciplinary exploration of human trafficking solutions</div>
-                            <button className='hpbutton'>Create a FREE account to access the Journal</button>
+                           <Link to="/createaccount"><button className='hpbutton'>Create a FREE account to access the Journal</button></Link> 
                         </div>
 
                         <div className='twoHP'>
@@ -83,7 +82,7 @@ class Homepage extends Component {
                               </div>
 
                           </a>
-                           <a className='hpIconTwo'>
+                           <a href="https://www.freetheslaves.net/" className='hpIconTwo'>
                                  <div className='iconPic6'>
 
                               </div>
@@ -91,7 +90,7 @@ class Homepage extends Component {
                                     Blog
                               </div>
                            </a>
-                            <a className='hpIconThree'>
+                            <a href="https://www.amazon.com/s/ref=nb_sb_noss_1?url=search-alias%3Daps&field-keywords=modern+day+slavery&rh=i%3Aaps%2Ck%3Amodern+day+slavery" className='hpIconThree'>
                                   <div className='iconPic7'>
 
                                 </div>
@@ -99,7 +98,7 @@ class Homepage extends Component {
                                     Books
                                 </div>
                             </a>
-                             <a className='hpIconFour'>
+                             <a href="https://www.youtube.com/results?search_query=free+slaves+today" className='hpIconFour' >
                                    <div className='iconPic8'>
 
                               </div>
@@ -185,7 +184,7 @@ class Homepage extends Component {
 
 
                     </div>
-
+                    
 
 
             </div>
