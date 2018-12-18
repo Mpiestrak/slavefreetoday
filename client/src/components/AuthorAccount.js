@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from "axios";
 import { Link } from "react-router-dom";
+import DeleteAuthor from "./DeleteAuthor";
 
 class AuthorAccount extends Component {
 
@@ -69,8 +70,7 @@ class AuthorAccount extends Component {
                 </div>
 
 
-
-
+                <DeleteAuthor {...this.props}/>
 
             </div>
         );
