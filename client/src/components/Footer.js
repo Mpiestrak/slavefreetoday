@@ -3,25 +3,25 @@ import styled from 'styled-components'
 import { Button } from 'semantic-ui-react'
 
 const FooterBar = styled.div`
-// position: absolute;
 display: flex;
+justify-content: space-evenly;
 background: #0A2342;
 boxShadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
-height: 388px;
 width: 100%;
-bottom: 0px; 
+height: 320px;
+padding: 20px; 
 `
 const JournalTitle = styled.p`
 color: #FFFEF9;
 font-weight: bold;
 list-style: none;
 `
-const JournalLink = styled.li`
+const JournalLink = styled.ul`
 color: #FFFEF9;
 list-style: none;
-line-height: 29px;
-margin-left: 80px;
-margin-top: 30px;
+// line-height: 29px;
+// margin-left: 80px;
+// margin-top: 30px;
 
 `
 const ResourcesTitle = styled.p`
@@ -33,14 +33,14 @@ const ResourcesLink = styled.ul`
 color: #FFFEF9;
 list-style: none;
 line-height: 29px;
-margin-left: 30px;
-margin-top: 30px;
+// margin-left: 30px;
+// margin-top: 30px;
 `
 const MultimediaLink = styled.ul`
 color: #FFFEF9;
 list-style: none;
-margin-left: 57px;
-margin-top: 30px;
+// margin-left: 60px;
+// margin-top: 30px;
 
 `
 const MultimediaTitle = styled.p`
@@ -56,7 +56,8 @@ font-weight: bold;
 const CalendarLink = styled.ul`
 color: #FFFEF9;
 list-style: none;
-margin-top: 30px;
+// margin-top: 30px;
+// margin-left: 90px;
 
 `
 const AboutUsTitle = styled.p`
@@ -66,10 +67,34 @@ font-weight: bold;
 const AboutUsLink = styled.ul`
 color: #FFFEF9;
 list-style: none;
-margin-top: 30px;
+// margin-top: 30px;
+// margin-left: 110px;
 `
-const button = styled.button`
-width=100px;
+const GreenButton = styled(Button)`
+&&& {
+    // margin-top: 30px;
+    font-size: 35px;
+    font-weight: 40px;
+}
+// margin-right: 90px;
+// width: 120px;
+// // margin-bottom: -1px;
+//     // margin-top: 0px;
+//     margin-right: 0px;
+//     padding: 0;
+     height: 27px;
+    width: 170px;
+//     text-align: center;
+`
+// const Copyright = styled.h6`
+// color: white;
+// height: 35px;
+// margin-top: 240px;
+// margin-right: 500px;
+// `
+const Paragraph = styled.p`
+color: white;
+text-align: right;
 `
 class Footer extends Component {
     render() {
@@ -77,32 +102,31 @@ class Footer extends Component {
               <FooterBar>
                 <JournalLink>
                     <JournalTitle>JOURNAL</JournalTitle>
-
-                    <li>Journal Home</li>
-                    <li>Archives</li>
-                    <li>Authors</li>
-                    <li>Submit a Manuscript</li>
-                    <li>Reviewers</li>
-                    <li>Editorial & Advisory Board</li>
+                    <li><a href='#'>Journal Home</a></li>
+                    <li><a href='#'>Archives</a></li>
+                    <li><a href='#'>Authors</a></li>
+                    <li><a href='#'>Submit a Manuscript</a></li>
+                    <li><a href='#'>Reviewers</a></li>
+                    <li><a href='#'>Editorial & Advisory Board</a></li>
                     </JournalLink>
                 <ResourcesLink>
                     <ResourcesTitle>RESOURCES</ResourcesTitle>
-                    <li>Organizations</li>
-                    <li>Reports</li>
-                    <li>Training</li>
-                    <li>Emergency Contacts</li>
+                    <li><a href='#'>Organizations</a></li>
+                    <li><a href='#'>Reports</a></li>
+                    <li><a href='#'>Training</a></li>
+                    <li><a href='#'>Emergency Contacts</a></li>
                 </ResourcesLink>
                 <MultimediaLink>
                 <MultimediaTitle>MULTIMEDIA</MultimediaTitle>
-                    <li>Podcast</li>
-                    <li>Blog</li>
-                    <li>Videos</li>
-                    <li>Books</li>
+                    <li><a href='#'>Podcast</a></li>
+                    <li><a href='#'>Blog</a></li>
+                    <li><a href='#'>Videos</a></li>
+                    <li><a href='#'>Books</a></li>
                 </MultimediaLink>
                 <CalendarLink>
                 <CalendarTitle>CALENDAR</CalendarTitle>
-                    <li>View Events</li>
-                    <li>Submit an Event</li>
+                    <li><a href='#'>View Events</a></li>
+                    <li><a href='#'>Submit an Event</a></li>
                 </CalendarLink>
                 <AboutUsLink>
                 <AboutUsTitle>ABOUT US</AboutUsTitle>
@@ -111,7 +135,19 @@ class Footer extends Component {
                         Atlanta, GA 67219
                     </li>
                 </AboutUsLink>
-                <Button color='olive' type='submit'>DONATE</Button>
+                <div>
+                    <GreenButton color='olive' type='submit'>DONATE</GreenButton>
+                    <Paragraph>Our organization is 
+                        <br></br>supported soley 
+                        through 
+                        <br></br>
+                        donations.
+                        Please consider 
+                        <br></br> making a tax-deductible 
+                        <br></br>donation.
+                    </Paragraph>
+              </div>
+                {/* <Copyright>2018 Copyright</Copyright> */}
               </FooterBar>
         );
     }
