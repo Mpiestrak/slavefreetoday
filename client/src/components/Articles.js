@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import axios from "axios";
-import '../css/Articles.css'
 import Link from "react-router-dom/es/Link";
 import "../css/Articles.css"
 
@@ -21,11 +20,12 @@ class Articles extends Component {
       <div>
           <div className='border'>
             <div className='header1'>JOURNAL OF MODERN SLAVERY</div>
-            <div className='subheader'>A Multidisciplinary Exploration of Human Trafficking Solutions</div>
+            <div className='subheaderA'>A Multidisciplinary Exploration of Human Trafficking Solutions</div>
           </div>
-          <div className='carousel'>
-              <img src="#" alt="Anti Slavery Mural"/>
+          <div className="pic1A">
+              
           </div>
+
           <div className='headerbutton'>
               Latest Online
           </div>
@@ -45,15 +45,15 @@ class Articles extends Component {
                 {article.abstract}
             </div>
             <div className='bottomlink'>
-                <div className='blink'>
+                <a className='blink'>
                     Abstract
-                </div>
-                <div className='blink'>
-                    WEB
-                </div>
-                <div className='blink'>
-                    PDF
-                </div>
+                </a>
+                <a className='blink'>
+                    Abstract
+                </a>
+                <a className='blink'>
+                    Abstract
+                </a>
             </div>
             </div>
           ))}
