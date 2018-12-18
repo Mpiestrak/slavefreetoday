@@ -1,8 +1,102 @@
 import React, { Component } from "react";
 import axios from "axios";
-import '../css/Articles.css'
 import Link from "react-router-dom/es/Link";
 import  "../images/anti-slavery_mural.png"
+import styled from 'styled-components'
+
+const Border = styled.div`
+    background: #97A11F;
+    text-align: center;
+    height: 150px;
+    display: block;
+`
+const Header1 = styled.div`
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 36px;
+    color: #FFFFFF;
+    padding-top: 4%;
+`
+const Subheader = styled.div`
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 24px;
+    color: #FFFEF9;
+`
+const Articlecontainer = styled.div`
+    margin: 0 3% 2% 3%;
+    border-radius: 0;
+    padding: 2% 1%;
+    background: rgba(10, 35, 66, 0.2);
+    max-height: 20vh;
+`
+const Headerbutton = styled.div`
+    background: rgba(10, 35, 66, 0.2);
+    border-radius: 5px 5px 0 0;
+    margin: 2% 81% 0 3%;
+    padding: 0 1%;
+`
+const Author = styled.div`
+    color: black;
+    text-transform: capitalize;
+    margin: 10px 0;
+    border-radius: inherit;
+    font-family: Open Sans;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    line-height: normal;
+`
+const Issuedate= styled.div`
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 20px;
+    border-radius: inherit;
+`
+const Abstract = styled.div`
+    color: black;
+    text-transform: capitalize;
+    margin: 10px 0;
+    border-radius: inherit;
+    font-family: Open Sans;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    line-height: normal;
+    max-height: 20vh;
+`
+const Titlelink = styled.div`
+    text-transform: capitalize;
+    text-decoration: none;
+    color: black;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 20px;
+    border-radius: inherit;
+`
+const Bottomlink = styled.div`
+    display: flex;
+    justify-content: space-between;
+    margin: 0 70% 0 0;
+`
+const Blink = styled.div`
+    display: flex;
+    padding: 5px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 18px;
+`
+
 
 class Articles extends Component {
   state = {
@@ -19,43 +113,43 @@ class Articles extends Component {
   render() {
     return (
       <div>
-          <div className='border'>
-            <div className='header1'>JOURNAL OF MODERN SLAVERY</div>
-            <div className='subheader'>A Multidisciplinary Exploration of Human Trafficking Solutions</div>
-          </div>
-          <div className='carousel'>
+          <Border>
+            <Header1>JOURNAL OF MODERN SLAVERY</Header1>
+            <Subheader>A Multidisciplinary Exploration of Human Trafficking Solutions</Subheader>
+          </Border>
+          <div>
               <img src="#" alt="Anti Slavery Mural"/>
           </div>
-          <div className='headerbutton'>
+          <Headerbutton>
               Latest Online
-          </div>
+          </Headerbutton>
         <div>
           {this.state.articles.map(article => (
-            <div className='articlecontainer'><Link  to={`/articles/${article.id}`}>
-            <div className='titlelink'>{article.title}</div>
+            <Articlecontainer><Link  to={`/articles/${article.id}`}>
+            <Titlelink>{article.title}</Titlelink>
             </Link>
             
-            <div className='author'>
+            <Author>
                 {article.author}
-            </div>
-            <div className='issuedate'>
+            </Author>
+            <Issuedate>
                 {article.issuedate}
-            </div>
-            <div className='abstract'>
+            </Issuedate>
+            <Abstract>
                 {article.abstract}
-            </div>
-            <div className='bottomlink'>
-                <div className='blink'>
+            </Abstract>
+            <Bottomlink>
+                <Blink>
                     Abstract
-                </div>
-                <div className='blink'>
+                </Blink>
+                <Blink>
                     WEB
-                </div>
-                <div className='blink'>
+                </Blink>
+                <Blink>
                     PDF
-                </div>
-            </div>
-            </div>
+                </Blink>
+            </Bottomlink>
+            </Articlecontainer>
           ))}
         </div>
       </div>
