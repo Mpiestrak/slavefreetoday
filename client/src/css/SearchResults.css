@@ -1,0 +1,23 @@
+.resultsS{
+width: 250px;
+height: 35px;
+margin-left:30px;
+margin-top: 20px;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+line-height: normal;
+font-size: 24px;
+
+color: #000000;
+}
+
+.inputS{
+width: 970px;
+height: 76px;
+margin-left:30px;
+margin-top: 20px;
+background: #FFFFFF;
+border: 2px solid #000000;
+box-sizing: border-box;
+}

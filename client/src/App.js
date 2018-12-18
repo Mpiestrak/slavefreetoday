@@ -37,6 +37,7 @@ class App extends Component {
                         <Route exact path="/myaccount" component={MyAccount}/>
                         <Route exact path="/searchresults" component={SearchResults}/>
                         <Route exact path="/tier2" component={Tier2}/>
+                        
                         <Route path="/" component={Homepage}/>
                     </Switch>
                 </div>

@@ -49,10 +49,10 @@ class Articles extends Component {
                     Abstract
                 </a>
                 <a className='blink'>
-                    Abstract
+                    Web
                 </a>
                 <a className='blink'>
-                    Abstract
+                    PDF
                 </a>
             </div>
             </div>
