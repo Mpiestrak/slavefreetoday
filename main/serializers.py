@@ -6,7 +6,7 @@ from .models import ViewUser, Author, Article#,Journal
 class ArticleSerializer(serializers.ModelSerializer):
     class Meta:
         model = Article
-        fields = ('title', 'categories', 'tags', 'issuedate', 'groups', 'hits', 'author')
+        fields = ('title', 'categories', 'tags', 'issuedate', 'groups', 'hits', 'author', 'abstract', 'content')
 
 
 class AuthorSerializer(serializers.ModelSerializer):
