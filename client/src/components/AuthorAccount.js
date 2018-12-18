@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import axios from "axios";
 import { Link } from "react-router-dom";
-// import DeleteAuthor from "./DeleteAuthor";
+import styled from 'styled-components'
+
 
 axios.defaults.xsrfCookieName = 'csrftoken'
 axios.defaults.xsrfHeaderName = 'X-CSRFToken'
+
+
+
 
 class AuthorAccount extends Component {
 

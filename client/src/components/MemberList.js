@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import axios from "axios";
+import styled from 'styled-components'
+import email from '../images/Email.png'
+import linkedin from '../images/LinkedIn.png'
+
+
+const Author = styled.div `
+text-align: left;
+`
 
 
 
@@ -31,22 +39,33 @@ class MemberList extends Component {
             <div>
 
                 <h1>Member Directory</h1>
+                <div>
                 {this.state.authors.map((author) => (
                     <div key={author.id}>
+
                         <Link to={`/authoraccount/${author.id}`}>
                             <img src={"Profile pic here"} />
+                        </Link>
+                        <div>
                             <h2>{author.first_name} {author.last_name}</h2>
                             <h2>{author.organization}</h2>
-                            <h3>{author.email}</h3>
-                            <img src={"Email icon here"} />
-                            <img src={"LinkedIn icon here"} />
-                            {/*We need to download these images*/}
+
+                            <p>{author.description}</p>
+
+                            <a href={author.email}>
+                            <img src={email}/>
+                            </a>
+
+                            <img src={linkedin} />
+
+                        </div>
+
                             <hr />
                             <br />
-                        </Link>
                     </div>
 
                 ))}
+                </div>
 
 
             </div>
