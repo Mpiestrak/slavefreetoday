@@ -3,8 +3,9 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 const Nav = styled.div`
+  position: relative;
   background: #0a2342;
-  boxshadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 3px 5px 0px #000;
   height: 20vh;
   width: 100%;
   left: 0px;
@@ -56,6 +57,7 @@ const SignInButton = styled.button`
   border-radius: 6px;
   margin-bottom: 10px;
   margin-right: 10px;
+  text-decoration: none;
 `;
 
 const DonateButton = styled.button`
@@ -82,22 +84,20 @@ class NavBar extends Component {
           Slave<Greentext>Free Today</Greentext>
         </Slavetext>
         <Navlinks>
-          <NavA to="#">JOURNAL</NavA>
+          <NavA to="/articles">ARTICLES</NavA>
           <NavA to="#">RESOURCES</NavA>
           <NavA to="#">MULTIMEDIA</NavA>
           <NavA to="#">CALENDAR</NavA>
           <NavA to="#">ABOUT</NavA>
           <div>
-            <SignInButton>
-              <Link to="#">
+            <Link to="/createaccount">
+              <SignInButton style={{ textDecoration: "none" }}>
                 SIGN IN
-              </Link>
-            </SignInButton>
-            <DonateButton>
-              <Link to="#">
-                DONATE
-              </Link>
-            </DonateButton>
+              </SignInButton>
+            </Link>
+            <Link to="/donations">
+              <DonateButton>DONATE</DonateButton>
+            </Link>
             <br />
             <NavSearch type="text" />
           </div>

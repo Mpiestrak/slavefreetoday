@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
 import styled from 'styled-components'
 import { Button } from 'semantic-ui-react'
+import { Link } from 'react-router-dom'
 
 const FooterBar = styled.div`
 display: flex;
 justify-content: space-evenly;
 background: #0A2342;
-boxShadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+box-shadow: 0px -2px 5px 0px #000;
 width: 100%;
 height: 320px;
 padding: 20px; 
@@ -19,6 +20,7 @@ list-style: none;
 const JournalLink = styled.ul`
 color: #FFFEF9;
 list-style: none;
+font-size: 14px;
 // line-height: 29px;
 // margin-left: 80px;
 // margin-top: 30px;
@@ -32,7 +34,7 @@ list-style: none;
 const ResourcesLink = styled.ul`
 color: #FFFEF9;
 list-style: none;
-line-height: 29px;
+
 // margin-left: 30px;
 // margin-top: 30px;
 `
@@ -96,6 +98,22 @@ const Paragraph = styled.p`
 color: white;
 text-align: right;
 `
+
+const DonateButton = styled.button`
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 24px;
+  color: #ffffff;
+  background-color: #a6b21f;
+  border-radius: 6px;
+  border: none;
+  width: 161.34px;
+  height: 45px;
+  left: 1163.66px;
+  top: 52.85px;
+`;
 class Footer extends Component {
     render() {
         return (
@@ -136,7 +154,10 @@ class Footer extends Component {
                     </li>
                 </AboutUsLink>
                 <div>
-                    <GreenButton color='olive' type='submit'>DONATE</GreenButton>
+                <Link to="/donations">
+              <DonateButton>DONATE</DonateButton>
+                </Link>
+                    {/* <GreenButton color='olive' type='submit'>DONATE</GreenButton> */}
                     <Paragraph>Our organization is 
                         <br></br>supported soley 
                         through 
