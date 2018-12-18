@@ -124,7 +124,8 @@ class Articles extends Component {
               Latest Online
           </Headerbutton>
         <div>
-          {this.state.articles.map(article => (
+          {this.state.articles.map((article) => (
+
             <Articlecontainer><Link  to={`/articles/${article.id}`}>
             <Titlelink>{article.title}</Titlelink>
             </Link>
