@@ -3,18 +3,22 @@ import axios from "axios";
 
 
 class DeleteAuthor extends Component {
-    //On click, delete the user and redirect
+
 
 handleClick() {
-    let authorId = this.props.match.params.authorId;
-    axios.delete(`/api/authors/${authorId}`)
-      .then(response => {
-        this.props.history.push("/user");
-      })
+     const author = this.props.match.params.authorId
+
+        axios.delete(`/api/authors/${author}`).then(res => {
+            console.log(res)
+            this.props.history.push("/")
+        prompt("Account Succesfully Deleted")
+        })
+    }
+
       .catch(err => console.log(err));
   }
 
-    render() {
+    render(){
         return (
             <div>
                 <button onClick={this.handleClick}>

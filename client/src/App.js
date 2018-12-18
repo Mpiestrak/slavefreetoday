@@ -39,7 +39,7 @@ class App extends Component {
                         <Route exact path="/manuscriptinfo" component={ManuscriptInfo}/>
                         <Route exact path="/memberlist" component={MemberList}/>
                         <Route exact path="/authoraccount/:authorId" component={AuthorAccount}/>
-                        <Route exact path="/viewaccount/:id" component={ViewAccount}/>
+                        <Route exact path="/viewaccount/:userId" component={ViewAccount}/>
                         <Route exact path="/searchresults" component={SearchResults}/>
                         <Route exact path="/tier2" component={Tier2}/>
                         <Route path="/" component={Homepage}/>

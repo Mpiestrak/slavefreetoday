@@ -2,15 +2,18 @@ import React, { Component } from 'react';
 import axios from "axios";
 import { Link } from "react-router-dom";
 
+axios.defaults.xsrfCookieName = 'csrftoken'
+axios.defaults.xsrfHeaderName = 'X-CSRFToken'
+
 class ViewAccount extends Component {
 
     state = {
-        user: []
+        user: {}
     };
 
     getAUser() {
-        const id = this.props.match.params.id
-        axios.get(`/api/viewusers/${id}`).then(res => {
+        const user = this.props.match.params.userId
+        axios.get(`/api/viewusers/${user}`).then(res => {
             this.setState({ user: res.data });
             console.log(res.data);
         });
@@ -20,6 +23,21 @@ class ViewAccount extends Component {
         this.getAUser()
     }
 
+
+
+    deleteViewUser = () => {
+        const user = this.props.match.params.userId
+
+        axios.delete(`/api/authors/${user}`).then(res => {
+            console.log(res)
+            this.props.history.push("/")
+        alert("Account Succesfully Deleted")
+        })
+    }
+
+
+
+
     render() {
 
         return (
@@ -27,7 +45,10 @@ class ViewAccount extends Component {
                 <div>
                     <h1>My Account</h1>
                     <img src={"Profile pic here"} />
+                </div>
 
+                <div>
+                    <p>{this.state.user.first_name}</p>
                 </div>
 
                 <div>
@@ -41,11 +62,6 @@ class ViewAccount extends Component {
                 </div>
 
                 <div>
-                    <Link to={`/memberlist`}><h2>Member Directory</h2></Link>
-                    <img src={"Person/Directory Icon here"} />
-                </div>
-
-                <div>
                     <h2>Saved Resources</h2>
                     <img src={"Bookmark Icon here"} />
                 </div>
@@ -56,18 +72,14 @@ class ViewAccount extends Component {
                 </div>
 
                 <div>
-                    <h2>Submit A Manuscript</h2>
-                    <img src={"Scroll or sumn Icon here"} />
-                </div>
-
-                <div>
                     <h2>Become A Reviewer</h2>
                     <img src={"Pencil and Paper Icon here"} />
                 </div>
 
 
-
-
+<button onClick={this.deleteViewUser}>
+                    DELETE THIS USER
+                </button>
 
             </div>
         );

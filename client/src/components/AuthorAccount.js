@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import axios from "axios";
 import { Link } from "react-router-dom";
-import DeleteAuthor from "./DeleteAuthor";
+// import DeleteAuthor from "./DeleteAuthor";
+
+axios.defaults.xsrfCookieName = 'csrftoken'
+axios.defaults.xsrfHeaderName = 'X-CSRFToken'
 
 class AuthorAccount extends Component {
 
@@ -19,6 +22,17 @@ class AuthorAccount extends Component {
 
     componentDidMount() {
         this.getAnAuthor()
+    }
+
+
+    deleteAuthor = () => {
+        const author = this.props.match.params.authorId
+
+        axios.delete(`/api/authors/${author}`).then(res => {
+            console.log(res)
+            this.props.history.push("/")
+        alert("Account Succesfully Deleted")
+        })
     }
 
     render() {
@@ -70,8 +84,9 @@ class AuthorAccount extends Component {
                 </div>
 
 
-                <DeleteAuthor {...this.props}/>
-
+ <button onClick={this.deleteAuthor}>
+                    DELETE THIS USER
+                </button>
             </div>
         );
     }
