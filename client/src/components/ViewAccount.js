@@ -28,7 +28,7 @@ class ViewAccount extends Component {
     deleteViewUser = () => {
         const user = this.props.match.params.userId
 
-        axios.delete(`/api/authors/${user}`).then(res => {
+        axios.delete(`/api/viewusers/${user}`).then(res => {
             console.log(res)
             this.props.history.push("/")
         alert("Account Succesfully Deleted")
@@ -48,7 +48,7 @@ class ViewAccount extends Component {
                 </div>
 
                 <div>
-                    <p>{this.state.user.first_name}</p>
+                    <p>{this.state.user.first_name} {this.state.user.last_name}</p>
                 </div>
 
                 <div>
