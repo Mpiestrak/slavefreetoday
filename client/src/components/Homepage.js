@@ -28,7 +28,7 @@ class Homepage extends Component {
 
                           <div className='hpIconContain'>
 
-                          <a className='hpIconOne'>
+                          <a className='hpIconOne' href="http://slavefreetoday.org/ngos/" target="_blank">
                               <div className='iconPic'>
 
                               </div>
@@ -37,7 +37,7 @@ class Homepage extends Component {
                               </div>
 
                           </a>
-                           <a className='hpIconTwo'>
+                           <a className='hpIconTwo' href="https://www.antislavery.org/reports-and-resources/" target="_blank">
                                  <div className='iconPic2'>
 
                               </div>
@@ -45,7 +45,7 @@ class Homepage extends Component {
                                     Reports
                               </div>
                            </a>
-                            <a className='hpIconThree'>
+                            <a className='hpIconThree' href="https://www.firstresponsetraining.com/about/modern-slavery-act-2015/" target="_blank">
                                   <div className='iconPic3'>
 
                                 </div>
@@ -53,7 +53,7 @@ class Homepage extends Component {
                                     Training
                                 </div>
                             </a>
-                             <a className='hpIconFour'>
+                             <a className='hpIconFour' href="https://www.modernslaveryhelpline.org/" target="_blank">
                                    <div className='iconPic4'>
 
                               </div>
@@ -73,7 +73,7 @@ class Homepage extends Component {
 
                           <div className='hpIconContain'>
 
-                          <a className='hpIconOne'>
+                          <a className='hpIconOne' href="https://www.npr.org/search?query=modern%20slavery&page=1" target="_blank">
                               <div className='iconPic5'>
 
                               </div>
@@ -82,7 +82,7 @@ class Homepage extends Component {
                               </div>
 
                           </a>
-                           <a href="https://www.freetheslaves.net/" className='hpIconTwo'>
+                           <a href="https://www.freetheslaves.net/" target="_blank" className='hpIconTwo'>
                                  <div className='iconPic6'>
 
                               </div>
@@ -90,7 +90,7 @@ class Homepage extends Component {
                                     Blog
                               </div>
                            </a>
-                            <a href="https://www.amazon.com/s/ref=nb_sb_noss_1?url=search-alias%3Daps&field-keywords=modern+day+slavery&rh=i%3Aaps%2Ck%3Amodern+day+slavery" className='hpIconThree'>
+                            <a href="http://slavefreetoday.org/books2/" target="_blank" className='hpIconThree'>
                                   <div className='iconPic7'>
 
                                 </div>
@@ -98,7 +98,7 @@ class Homepage extends Component {
                                     Books
                                 </div>
                             </a>
-                             <a href="https://www.youtube.com/results?search_query=free+slaves+today" className='hpIconFour' >
+                             <a href="http://slavefreetoday.org/documentaries/" target="_blank" className='hpIconFour' >
                                    <div className='iconPic8'>
 
                               </div>
@@ -121,20 +121,20 @@ class Homepage extends Component {
 
                           <div className='hpIconContain'>
 
-                          <a className='hpIconOne'>
+                          <a className='hpIconOne' href="https://calendar.google.com/calendar/r" target="_blank">
                               <div className='iconPic9'>
 
                               </div>
-                              <div className='iconLabel5'>
+                              <div className='iconLabel5' >
                                   View Events
                               </div>
 
                           </a>
-                           <a className='hpIconTwo'>
+                           <a className='hpIconTwo' href="https://calendar.google.com/calendar/r" target="_blank">
                                  <div className='iconPic10'>
 
                               </div>
-                                <div className='iconLabel5'>
+                                <div className='iconLabel5' >
                                     Add Events
                               </div>
                            </a>
@@ -155,7 +155,7 @@ class Homepage extends Component {
 
                           <div className='hpIconContain'>
 
-                          <a className='hpIconOne'>
+                          <a className='hpIconOne'  href="http://slavefreetoday.org/slavefree-today-ngo-board-members/" target="_blank">
                               <div className='iconPic11'>
 
                               </div>
@@ -164,7 +164,7 @@ class Homepage extends Component {
                               </div>
 
                           </a>
-                           <a className='hpIconTwo'>
+                           <a className='hpIconTwo'  href="https://calendar.google.com/calendar/r" target="_blank">
                                  <div className='iconPic12'>
 
                               </div>
