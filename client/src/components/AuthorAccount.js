@@ -60,7 +60,7 @@ class AuthorAccount extends Component {
 
             <div className="Options">
                 <div>
-                    <h2>Settings</h2>
+                    <h2>Update</h2>
                     <img src={settings} />
                 </div>
 

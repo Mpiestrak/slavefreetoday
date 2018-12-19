@@ -4,6 +4,8 @@ import settings from '../images/Settings.png'
 import bookmark from "../images/Bookmark.png";
 import donations from "../images/Money.png";
 import review from "../images/Reviewer.png";
+import '../css/MyAccount.css'
+
 
 
 axios.defaults.xsrfCookieName = 'csrftoken'
@@ -47,9 +49,9 @@ class ViewAccount extends Component {
         return (
             <div className="AccountDiv">
 
-                <div>
+                <div className="Profile">
                     <h1>My Account</h1>
-                    <img src={"Profile pic here"} />
+                    <img src={this.state.user.img} />
 
                     <p>{this.state.user.first_name} {this.state.user.last_name}</p>
 
@@ -58,10 +60,10 @@ class ViewAccount extends Component {
                 </button>
                 </div>
 
-                <div>
+            <div className="Options">
                     {/*Update*/}
                     <div>
-                        <h2>Settings</h2>
+                        <h2>Update</h2>
                         <img src={settings} />
                     </div>
 
