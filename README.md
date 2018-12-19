@@ -50,12 +50,11 @@ https://www.figma.com/file/8EG5EjVjR8cprWhFoMWlgf/HI-FI-DESKTOP-WIRES---ALL?node
     * PostgreSQL
    
 ## User Stories
- 
-    * When user clicks 'submit' on the Donate Online page,  a submission confirmation page would appear, 
-      which is in the mid-fi wireframes
-    * As a user, the Donate button will link to 'donation info' screen
-    * As a user, on the My Account screen, they should see several icons
-    * 
+ * When user clicks 'submit' on the Donate Online page,  a submission confirmation page would appear, 
+   which is in the mid-fi wireframes
+ * As a user, the Donate button will link to 'donation info' screen
+ * As a user, on the My Account screen, they should see several icons
+ * 
 
 ## Future Development
 
