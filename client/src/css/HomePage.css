@@ -117,6 +117,11 @@ body {
       margin-left: 415px;
       margin-top: 30px;
   }
+
+  .hpbutton:hover{
+    width:380px;
+    height:150px; 
+  }
   
   .hptitle3{
      text-align: center;
@@ -167,6 +172,11 @@ body {
       background-image: url("../images/NGO ICON.png");
       background-size: 100% 100%;
   }
+  .iconPic:hover{
+    width:100px;
+    height:90px;
+
+  }
   .hpIconTwo{
   
       width:75px;
@@ -180,6 +190,11 @@ body {
   
       background-image: url("../images/Reports Icon.png");
       background-size: 100% 100%;
+  }
+  .iconPic2:hover{
+    width:100px;
+    height:90px;
+
   }
   .hpIconThree{
   
@@ -195,6 +210,11 @@ body {
       background-image: url("../images/Training ICON.png");
       background-size: 100% 100%;
   }
+  .iconPic3:hover{
+    width:100px;
+    height:90px;
+
+  }
   .hpIconFour{
   
        width:75px;
@@ -206,6 +226,11 @@ body {
   
       background-image: url("../images/Contacts ICON.png");
       background-size: 100% 100%;
+  }
+  .iconPic4:hover{
+    width:100px;
+    height:90px;
+
   }
   .iconLabel4{
       margin-top: 20px;
@@ -252,12 +277,22 @@ body {
       background-image: url("../images/PODCAST ICON.png");
       background-size: 100% 100%;
   }
+  .iconPic5:hover{
+    width:100px;
+    height:90px;
+
+  }
   .iconPic6{
       width:73px;
       height:60px;
   
       background-image: url("../images/BLOG ICON.png");
       background-size: 100% 100%;
+  }
+  .iconPic6:hover{
+    width:100px;
+    height:90px;
+
   }
   .iconPic7{
       width:73px;
@@ -266,12 +301,22 @@ body {
       background-image: url("../images/BOOKS ICON.png");
       background-size: 100% 100%;
   }
+  .iconPic7:hover{
+    width:100px;
+    height:90px;
+
+  }
   .iconPic8{
       width:73px;
       height:60px;
   
       background-image: url("../images/VIDEOS ICON.png");
       background-size: 100% 100%;
+  }
+  .iconPic8:hover{
+    width:100px;
+    height:90px;
+
   }
   .iconPic9{
       width:73px;
@@ -280,12 +325,22 @@ body {
       background-image: url("../images/VIEW EVENTS ICON.png");
       background-size: 100% 100%;
   }
+  .iconPic9:hover{
+    width:100px;
+    height:90px;
+
+  }
   .iconPic10{
       width:73px;
       height:60px;
   
       background-image: url("../images/ADD EVENTS ICON.png");
       background-size: 100% 100%;
+  }
+  .iconPic10:hover{
+    width:100px;
+    height:90px;
+
   }
   .iconLabel5{
       margin-top: 20px;
@@ -306,6 +361,11 @@ body {
       background-image: url("../images/MISSION ICON.png");
       background-size: 100% 100%;
   }
+  .iconPic11:hover{
+    width:100px;
+    height:90px;
+
+  }
   .iconPic12{
       width:73px;
       height:60px;
@@ -313,5 +373,9 @@ body {
       background-image: url("../images/LEADERSHIP ICON.png");
       background-size: 100% 100%;
   }
-  
+  .iconPic12:hover{
+    width:100px;
+    height:90px;
+
+  }
   /****************************************************************************************/

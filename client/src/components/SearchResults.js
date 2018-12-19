@@ -6,7 +6,7 @@ import {Form, Input, Button} from 'reactstrap'
 class SearchResults extends Component {
     state = {
         articles: [],
-        searchArticle: "",
+        search: "",
        
     }
 

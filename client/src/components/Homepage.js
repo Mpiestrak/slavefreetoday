@@ -121,7 +121,7 @@ class Homepage extends Component {
 
                           <div className='hpIconContain'>
 
-                          <a className='hpIconOne' href="https://calendar.google.com/calendar/r" target="_blank">
+                          <a className='hpIconOne' href="http://127.0.0.1:5500/client/src/components/Calendar.html" target="_blank">
                               <div className='iconPic9'>
 
                               </div>
@@ -130,7 +130,7 @@ class Homepage extends Component {
                               </div>
 
                           </a>
-                           <a className='hpIconTwo' href="https://calendar.google.com/calendar/r" target="_blank">
+                           <a className='hpIconTwo' href="http://127.0.0.1:5500/client/src/components/Calendar.html" target="_blank">
                                  <div className='iconPic10'>
 
                               </div>
@@ -164,7 +164,7 @@ class Homepage extends Component {
                               </div>
 
                           </a>
-                           <a className='hpIconTwo'  href="https://calendar.google.com/calendar/r" target="_blank">
+                           <a className='hpIconTwo'  href="http://slavefreetoday.org/slavefree-today-ngo-board-members/" target="_blank">
                                  <div className='iconPic12'>
 
                               </div>

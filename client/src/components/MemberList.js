@@ -36,13 +36,30 @@ class MemberList extends Component {
 
     render() {
         return (
-            <div>
+            <div className='allML'>
                 <div className="headerML">MEMBER DIRECTORY</div>
                 {this.state.authors.map((author) => (
                 <div className="mainContainML" key={author.id}>
-                    {author.first_name}
+                    
                 <img src={author.img} alt="" className="profilepicML" />
-                <div className="infoboxML"></div>
+                <div className="infoboxML">
+                <h2 className='nameML'>{author.first_name} {author.last_name}</h2>
+
+                <div className="iconflexML">
+                <a href='mailto:{author.email}'>
+                <div  className="mailML" ></div>
+                </a>
+                <a href='https://www.linkedin.com/in/{author.first_name}{author.last_name}/{'>
+                <div  className="linkedML" ></div>
+                </a>
+
+                </div>
+
+                <h4>{author.organization}</h4>
+
+                <p className="paraML">{author.description}</p>
+
+                </div>
                 
                 
                 
