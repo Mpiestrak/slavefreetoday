@@ -13,6 +13,7 @@
 
 ## Heroku Site
 
+https://slavefreetoday.herokuapp.com/
 
 ## ERD
 
@@ -45,7 +46,6 @@ https://www.figma.com/file/8EG5EjVjR8cprWhFoMWlgf/HI-FI-DESKTOP-WIRES---ALL?node
     * React-Strap
     * Style-Components
     * Sematic-UI-React
-    * Import-Export
     * Pipenv
     * PostgreSQL
    
@@ -55,6 +55,8 @@ https://www.figma.com/file/8EG5EjVjR8cprWhFoMWlgf/HI-FI-DESKTOP-WIRES---ALL?node
  * As a user, the Donate button will link to 'donation info' screen
  * As a user, on the My Account screen, they should see several icons
  * A user should be able to fill out a form to Create an Account.
+ * When logged into the website, a user should be able to see a Member List for all contributing members.
+ *
 
 ## Future Development
 
