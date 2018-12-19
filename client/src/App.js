@@ -11,12 +11,13 @@ import FilterModal from "./components/FilterModal";
 import Footer from "./components/Footer";
 import ManuscriptInfo from "./components/ManuscriptInfo";
 import MemberList from "./components/MemberList";
-import MyAccount from "./components/MyAccount";
+import AuthorAccount from "./components/AuthorAccount";
 import SearchResults from "./components/SearchResults";
 import Tier2 from "./components/Tier2";
 import Navbar from "./components/Navbar";
 import SingleArticle from "./components/SingleArticle";
 import UpdateArticle from "./components/UpdateArticle";
+import ViewAccount from "./components/ViewAccount"
 
 class App extends Component {
     render() {
@@ -36,7 +37,8 @@ class App extends Component {
                         <Route exact path="/filtermodal" component={FilterModal}/>
                         <Route exact path="/manuscriptinfo" component={ManuscriptInfo}/>
                         <Route exact path="/memberlist" component={MemberList}/>
-                        <Route exact path="/myaccount" component={MyAccount}/>
+                        <Route exact path="/authoraccount/:authorId" component={AuthorAccount}/>
+                        <Route exact path="/viewaccount/:userId" component={ViewAccount}/>
                         <Route exact path="/searchresults" component={SearchResults}/>
                         <Route exact path="/tier2" component={Tier2}/>
                         <Route path="/" component={Homepage}/>

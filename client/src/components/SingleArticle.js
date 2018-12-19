@@ -1,11 +1,9 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 import "../css/SingleArticle.css";
 import axios from "axios";
 import Link from "react-router-dom";
 import styled from 'styled-components';
 import UpdateArticle from "./UpdateArticle";
-
-
 
 
 const Allcontainer = styled.div`
@@ -97,63 +95,76 @@ const Subheader = styled.div`
 `
 
 class SingleArticle extends Component {
-  state = {
-    article: {}
-  };
+    state = {
+        article: {}
+    };
 
 
-  componentDidMount() {
-    const { id } = this.props.match.params;
-    axios.get(`/api/articles/${id}`).then(res => {
-      this.setState({ article: res.data });
-      console.log(res.data);
-    });
-  }
+    componentDidMount() {
+        const {id} = this.props.match.params;
+        axios.get(`/api/articles/${id}`).then(res => {
+            this.setState({article: res.data});
+            console.log(res.data);
+        });
+    }
 
-  render() {
-    return (
-      <div>
-          <Border>
-            <Header1>JOURNAL OF MODERN SLAVERY</Header1>
-            <Subheader1>A Multidisciplinary Exploration of Human Trafficking Solutions</Subheader1>
-          </Border>
-        <Allcontainer>
-          <div>
-            <div>Share</div>
-            <div>Twitter</div>
-            <div>FB</div>
-          </div>
-          <div>
-            <Headers>{this.state.article.title}</Headers>
-            <Subheader>{this.state.article.author}</Subheader>
-              {/*<Subheader>*/}
-                  {/*<Link to={`/updatearticle/${id}/`}>Article id: {this.state.article.id}</Link>*/}
-              {/*</Subheader>*/}
-            <Linkcontainer>
-              <Activelink href="#">
-                HTML
-              </Activelink>
-              <Inactivelink href="#">
-                PDF
-              </Inactivelink>
-              <Inactivelink href="#">
-                INFO & METRICS
-              </Inactivelink>
-            </Linkcontainer>
-            <Abstract>
-              <Textheader>Abstract</Textheader>
-              <Textcontent>{this.state.article.abstract}</Textcontent>
-            </Abstract>
-            <Textcontent>{this.state.article.content}</Textcontent>
-          </div>
-          {/* <div className='sidebar'>
+    deleteArticle = () => {
+        const id = this.props.match.params.id
+        console.log(id)
+        axios.delete(`/api/articles/${id}`).then(res => {
+            console.log(res)
+            this.props.history.push("/")
+            alert("Article Successfully Deleted")
+        })
+    }
+
+    render() {
+        return (
+            <div>
+                <Border>
+                    <Header1>JOURNAL OF MODERN SLAVERY</Header1>
+                    <Subheader1>A Multidisciplinary Exploration of Human Trafficking Solutions</Subheader1>
+                </Border>
+                <Allcontainer>
+                    <div>
+                        <div>Share</div>
+                        <div>Twitter</div>
+                        <div>FB</div>
+                    </div>
+                    <div>
+                        <Headers>{this.state.article.title}</Headers>
+                        <Subheader>{this.state.article.author}</Subheader>
+                        {/*<Subheader>*/}
+                        {/*<Link to={`/updatearticle/${id}/`}>Article id: {this.state.article.id}</Link>*/}
+                        {/*</Subheader>*/}
+                        <Linkcontainer>
+                            <Activelink href="#">
+                                HTML
+                            </Activelink>
+                            <Inactivelink href="#">
+                                PDF
+                            </Inactivelink>
+                            <Inactivelink href="#">
+                                INFO & METRICS
+                            </Inactivelink>
+                        </Linkcontainer>
+                        <Abstract>
+                            <Textheader>Abstract</Textheader>
+                            <Textcontent>{this.state.article.abstract}</Textcontent>
+                        </Abstract>
+                        <Textcontent>{this.state.article.content}</Textcontent>
+                    </div>
+                    {/* <div className='sidebar'>
               <ArticleSidebar />
           </div> */}
-          <UpdateArticle {...this.props} />
-        </Allcontainer>
-      </div>
-    );
-  }
+                    <button onClick={this.deleteArticle}>
+                        DELETE THIS ARTICLE
+                    </button>
+                    <UpdateArticle {...this.props} />
+                </Allcontainer>
+            </div>
+        );
+    }
 }
 
 export default SingleArticle;

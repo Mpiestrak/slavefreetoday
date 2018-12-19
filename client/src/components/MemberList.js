@@ -1,7 +1,13 @@
-import React, {Component} from 'react';
-import {Link} from "react-router-dom";
+import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 import axios from "axios";
-import NavBar from "./Navbar";
+import styled from 'styled-components'
+import email from '../images/Email.png'
+import linkedin from '../images/LinkedIn.png'
+
+
+
+
 
 
 class MemberList extends Component {
@@ -13,9 +19,9 @@ class MemberList extends Component {
 
 
 
-         //Call the user and set the state to the data received in response
+    //Call the user and set the state to the data received in response
     getAllAuthors() {
-        axios.get("/api/authors").then(res => {
+        axios.get(`/api/authors`).then(res => {
             console.log(res.data)
             this.setState({ authors: res.data })
         })
@@ -28,21 +34,35 @@ class MemberList extends Component {
     render() {
         return (
             <div>
-            <h1>Member Directory</h1>
-                {this.state.authors.map((author)=> (
-                    <div key={author.id}>
-                        <img src={"Profile pic here"}/>
-                        <h2>{author.first_name} {author.last_name}</h2>
-                        <h2>{author.organization}</h2>
-                        <h3>{author.email}</h3>
-                        <img src={"Email icon here"}/>
-                        <img src={"LinkedIn icon here"}/>
-                        {/*We need to download these images*/}
-                        <hr/>
-                        <br/>
-                    </div>
-                ))}
 
+                <h1>Member Directory</h1>
+                <div>
+                {this.state.authors.map((author) => (
+                    <div key={author.id}>
+
+                        <Link to={`/authoraccount/${author.id}`}>
+                            <img src={"Profile pic here"} />
+                        </Link>
+                        <div>
+                            <h2>{author.first_name} {author.last_name}</h2>
+                            <h2>{author.organization}</h2>
+
+                            <p>{author.description}</p>
+
+                            <a href={author.email}>
+                            <img src={email}/>
+                            </a>
+
+                            <img src={linkedin} />
+
+                        </div>
+
+                            <hr />
+                            <br />
+                    </div>
+
+                ))}
+                </div>
 
 
             </div>
