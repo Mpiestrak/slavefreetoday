@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import axios from "axios";
 import styled from 'styled-components'
+import settings from '../images/Settings.png'
+import view from '../images/View.png'
 
 
 axios.defaults.xsrfCookieName = 'csrftoken'
@@ -52,15 +54,7 @@ class ViewAccount extends Component {
                     <p>{this.state.user.first_name} {this.state.user.last_name}</p>
                 </div>
 
-                <div>
-                    <h2>Settings</h2>
-                    <img src={""} />
-                </div>
 
-                <div>
-                    <h2>View Profile</h2>
-                    <img src={"Eye/ Profile Icon here"} />
-                </div>
 
                 <div>
                     <h2>Saved Resources</h2>

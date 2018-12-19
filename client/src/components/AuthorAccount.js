@@ -2,12 +2,17 @@ import React, { Component } from 'react';
 import axios from "axios";
 import { Link } from "react-router-dom";
 import styled from 'styled-components'
+import settings from '../images/Settings.png'
+import view from '../images/View.png'
+import memberlist from '../images/Directory.png'
+import bookmark from '../images/Bookmark.png'
+import donations from '../images/Money.png'
+import manuscript from '../images/Paper_Scroll.png'
+import review from '../images/Reviewer.png'
 
 
 axios.defaults.xsrfCookieName = 'csrftoken'
 axios.defaults.xsrfHeaderName = 'X-CSRFToken'
-
-
 
 
 class AuthorAccount extends Component {
@@ -54,37 +59,37 @@ class AuthorAccount extends Component {
 
                 <div>
                     <h2>Settings</h2>
-                    <img src={""} />
+                    <img src={settings} />
                 </div>
 
                 <div>
                     <h2>View Profile</h2>
-                    <img src={"Eye/ Profile Icon here"} />
+                    <img src={view} />
                 </div>
 
                 <div>
                     <Link to={'/memberlist'}><h2>Member Directory</h2></Link>
-                    <img src={"Person/Directory Icon here"} />
+                    <img src={memberlist} />
                 </div>
 
                 <div>
                     <h2>Saved Resources</h2>
-                    <img src={"Bookmark Icon here"} />
+                    <img src={bookmark} />
                 </div>
 
                 <div>
-                    <h2>Donation History</h2>
-                    <img src={"Dollar Icon here"} />
+                    <h2>Donations</h2>
+                    <img src={donations} />
                 </div>
 
                 <div>
                     <h2>Submit A Manuscript</h2>
-                    <img src={"Scroll or sumn Icon here"} />
+                    <img src={manuscript} />
                 </div>
 
                 <div>
                     <h2>Become A Reviewer</h2>
-                    <img src={"Pencil and Paper Icon here"} />
+                    <img src={review} />
                 </div>
 
 

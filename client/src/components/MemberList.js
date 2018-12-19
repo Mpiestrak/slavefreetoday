@@ -6,9 +6,6 @@ import email from '../images/Email.png'
 import linkedin from '../images/LinkedIn.png'
 
 
-const Author = styled.div `
-text-align: left;
-`
 
 
 
