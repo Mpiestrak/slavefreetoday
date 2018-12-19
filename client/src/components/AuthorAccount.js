@@ -21,17 +21,16 @@ class AuthorAccount extends Component {
         author: {}
     };
 
-    getAnAuthor() {
-        const author = this.props.match.params.authorId
+    // getAnAuthor() {
+    //
+    // }
+
+    componentDidMount() {
+ const author = this.props.match.params.authorId
         axios.get(`/api/authors/${author}`).then(res => {
             this.setState({ author: res.data });
             console.log(res.data);
-        });
-    }
-
-    componentDidMount() {
-        this.getAnAuthor()
-    }
+        });    }
 
 
     deleteAuthor = () => {
@@ -51,9 +50,8 @@ class AuthorAccount extends Component {
                 <div>
                     <h1>My Account</h1>
                     <img src={"Profile pic here"} />
-                </div>
 
-                <div>
+
                     <p>{this.state.author.first_name}</p>
                 </div>
 
