@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-
 const Nav = styled.div`
   position: relative;
   background: #0a2342;
@@ -11,7 +10,6 @@ const Nav = styled.div`
   left: 0px;
   right: 0px;
 `;
-
 const Slavetext = styled.div`
   position: relative;
   color: white;
@@ -21,12 +19,10 @@ const Slavetext = styled.div`
   height: 50px;
   width: 274px;
 `;
-
 const Greentext = styled.span`
   color: #a6b21f;
   font-weight: bold;
 `;
-
 const Navlinks = styled.div`
   display: flex;
   justify-content: space-around;
@@ -59,7 +55,6 @@ const SignInButton = styled.button`
   margin-right: 10px;
   text-decoration: none;
 `;
-
 const DonateButton = styled.button`
   font-family: Open Sans;
   font-style: normal;
@@ -75,20 +70,20 @@ const DonateButton = styled.button`
   left: 1163.66px;
   top: 52.85px;
 `;
-
 class NavBar extends Component {
   render() {
     return (
       <Nav>
-        <Slavetext className="slavetext">
+        <Link to="/"><Slavetext className="slavetext">
           Slave<Greentext>Free Today</Greentext>
         </Slavetext>
+        </Link>
         <Navlinks>
-          <NavA to="/articles">ARTICLES</NavA>
-          <NavA to="#">RESOURCES</NavA>
-          <NavA to="#">MULTIMEDIA</NavA>
-          <NavA to="#">CALENDAR</NavA>
-          <NavA to="#">ABOUT</NavA>
+          <NavA href="/articles">ARTICLES</NavA>
+          <NavA href="#">RESOURCES</NavA>
+          <NavA href="/memberlist">MEMBER LIST</NavA>
+          <NavA href="#">CALENDAR</NavA>
+          <NavA href="#">ABOUT</NavA>
           <div>
             <Link to="/createaccount">
               <SignInButton style={{ textDecoration: "none" }}>
@@ -106,5 +101,4 @@ class NavBar extends Component {
     );
   }
 }
-
 export default NavBar;
