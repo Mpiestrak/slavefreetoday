@@ -195,7 +195,7 @@ class ManuscriptInfo extends Component {
                     <Articlebutton href={`/articles`}>Latest Online</Articlebutton>
                     <Manuscriptbutton href={`/manuscriptinfo`}>Submit Manuscript</Manuscriptbutton>
                     <Scholastica>
-                        <Scholasticbutton href="http://www.scholasticahq.com">Submit</Scholasticbutton>
+                        <Scholasticbutton target="_blank" href="http://www.scholasticahq.com">Submit</Scholasticbutton>
                     </Scholastica>
                 </Tabs>
                 <Gridcontainer>

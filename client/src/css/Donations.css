@@ -1,4 +1,10 @@
 
+.totalcontainer{
+    height: 225vh;
+
+}
+
+
 .box1{
     height:800px;
     width:100vw;
@@ -43,12 +49,12 @@ text-align: center;
     color: #0A2342;
     margin-top:20px;
 }
-.button {
+.buttonD {
     width: 325px;
     height: 82px;
     background:white;
     border: 2px solid #0A2342;
-    margin-left: 400px;
+    margin-left: 38%;
     border-radius: 10px;
     background-image: url(../images/paypal.png);
     background-size: 100% 100%;
