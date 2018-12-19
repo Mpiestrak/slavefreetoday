@@ -1,7 +1,16 @@
-import React, {Component} from 'react';
-import {Link} from "react-router-dom";
+import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 import axios from "axios";
-import NavBar from "./Navbar";
+import styled from 'styled-components'
+
+import "../css/MemberList.css";
+
+
+const Author = styled.div `
+text-align: left;
+`
+
+
 
 
 class MemberList extends Component {
@@ -13,9 +22,9 @@ class MemberList extends Component {
 
 
 
-         //Call the user and set the state to the data received in response
+    //Call the user and set the state to the data received in response
     getAllAuthors() {
-        axios.get("/api/authors").then(res => {
+        axios.get(`/api/authors`).then(res => {
             console.log(res.data)
             this.setState({ authors: res.data })
         })
@@ -28,23 +37,18 @@ class MemberList extends Component {
     render() {
         return (
             <div>
-            <h1>Member Directory</h1>
-                {this.state.authors.map((author)=> (
-                    <div key={author.id}>
-                        <img src={"Profile pic here"}/>
-                        <h2>{author.first_name} {author.last_name}</h2>
-                        <h2>{author.organization}</h2>
-                        <h3>{author.email}</h3>
-                        <img src={"Email icon here"}/>
-                        <img src={"LinkedIn icon here"}/>
-                        {/*We need to download these images*/}
-                        <hr/>
-                        <br/>
-                    </div>
-                ))}
-
-
-
+                <div className="headerML">MEMBER DIRECTORY</div>
+                {this.state.authors.map((author) => (
+                <div className="mainContainML" key={author.id}>
+                    {author.first_name}
+                <img src={author.img} alt="" className="profilepicML" />
+                <div className="infoboxML"></div>
+                
+                
+                
+                
+                </div>
+                 ))}
             </div>
 
         );

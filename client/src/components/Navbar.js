@@ -1,117 +1,107 @@
-import React, { Component } from 'react';
-import styled from 'styled-components'
+import React, { Component } from "react";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Nav = styled.div`
-// position: absolute; 
-  background: #0A2342;
-  boxShadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+  position: relative;
+  background: #0a2342;
+  box-shadow: 0px 3px 5px 0px #000;
   height: 20vh;
   width: 100%;
   left: 0px;
   right: 0px;
-`
+`;
 
-  const Slavetext = styled.div`
-    // display: flex;
-    // justify-content: center;
-    position: relative;
-    color: white;
-    margin-left: 45px;
-    top: 35px;
-    font-size: 37px;
-    height: 50px;
-  `
-  
-  const Greentext = styled.span`
-    color: #A6B21F;
-    font-weight: bold;
-  `
+const Slavetext = styled.div`
+  position: relative;
+  color: white;
+  margin-left: 45px;
+  top: 35px;
+  font-size: 37px;
+  height: 50px;
+  width: 274px;
+`;
 
-  const Navlinks = styled.ul `
-    display: flex;
-    justify-content: space around;
-    position: absolute;
-    padding: 15px;
-    // color: white;
-    // list-style: none;
-    // text-decoration: none;
-    // top: 110px;
-    left: 71px;
-`
+const Greentext = styled.span`
+  color: #a6b21f;
+  font-weight: bold;
+`;
+
+const Navlinks = styled.div`
+  display: flex;
+  justify-content: space-around;
+  margin: 0 16px;
+`;
 const NavA = styled.a`
-    text-decoration: none;
-    padding: 0px;
-    color: white;
-    // margin-right: 50px;
-    margin-top: 40px;
-    font-size: 24px;
-    
-`
+  text-decoration: none;
+  padding: 0px;
+  color: white;
+  margin-top: 60px;
+  font-size: 24px;
+`;
 const NavSearch = styled.input`
-    position: absolute;
-    // padding: 0px 0px 0px 0px;
-    width: 304px;
-    height: 32px;
-    left: 999px;
-    top: 108px;
-  `
+  width: 315px;
+  height: 32px;
+  top: 108px;
+`;
 const SignInButton = styled.button`
-    position: relative;
-    width: 146.84px;
-    height: 45px;
-    padding: 0px 0px 0px 0px;
-    margin-left: 999px;
-    margin-top: 2px;
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: bold;
-    line-height: normal;
-    font-size: 24px;
-    color: #FFFFFF;
-    background-color: #0A2342;
-    border-radius: 6px;
-`
+  width: 146.84px;
+  height: 45px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 24px;
+  color: white;
+  background-color: #0a2342;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+`;
 
 const DonateButton = styled.button`
-  position: absolute;
-    // width: 99.64px;
-    // height: 34.62px;
-    // left: 1027.08px;
-    // top: 58.61px;
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: bold;
-    line-height: normal;
-    font-size: 24px;
-    color: #FFFFFF;
-    background-color: #A6B21F;
-    border-radius: 6px;
-    border: none;
-    width: 161.34px;
-    height: 45px;
-    left: 1163.66px;
-    top: 52.85px;
-`
-
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 24px;
+  color: #ffffff;
+  background-color: #a6b21f;
+  border-radius: 6px;
+  border: none;
+  width: 161.34px;
+  height: 45px;
+  left: 1163.66px;
+  top: 52.85px;
+`;
 
 class NavBar extends Component {
   render() {
     return (
       <Nav>
-          <Slavetext className="slavetext">Slave<Greentext>Free Today</Greentext></Slavetext>
+        <Slavetext className="slavetext">
+          Slave<Greentext>Free Today</Greentext>
+        </Slavetext>
         <Navlinks>
-          <NavA href='#'>JOURNAL</NavA>
-          <NavA href='#'>RESOURCES</NavA>
-          <NavA href='#'>MULTIMEDIA</NavA>
-          <NavA href='#'>CALENDAR</NavA>
-          <NavA href='#'>ABOUT</NavA>
+          <NavA to="/articles">ARTICLES</NavA>
+          <NavA to="#">RESOURCES</NavA>
+          <NavA to="#">MULTIMEDIA</NavA>
+          <NavA to="#">CALENDAR</NavA>
+          <NavA to="#">ABOUT</NavA>
+          <div>
+            <Link to="/createaccount">
+              <SignInButton style={{ textDecoration: "none" }}>
+                SIGN IN
+              </SignInButton>
+            </Link>
+            <Link to="/donations">
+              <DonateButton>DONATE</DonateButton>
+            </Link>
+            <br />
+            <NavSearch type="text" />
+          </div>
         </Navlinks>
-        <div>
-        <SignInButton>SIGN IN</SignInButton>
-        <DonateButton>DONATE</DonateButton>
-        </div>
-        <NavSearch type="text"></NavSearch>
-        
       </Nav>
     );
   }

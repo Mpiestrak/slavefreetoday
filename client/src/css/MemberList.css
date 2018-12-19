@@ -1,0 +1,33 @@
+.headerML{
+
+
+height: 63px;
+
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+line-height: normal;
+font-size: 36px;
+text-align: center;
+
+color: #0A2342;
+margin-top:20px;
+}
+.mainContainML{
+    display:flex;
+    justify-content: space-evenly;
+}
+.profilepicML{
+height:235px;
+width: 200px;
+border:solid;
+border-radius: 50%;
+
+}
+.infoboxML{
+width: 639px;
+height: 246px;
+border:solid;
+
+}

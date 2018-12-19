@@ -171,9 +171,11 @@ class Donations extends Component {
         <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
           <ModalHeader toggle={this.toggle}>Donate to SlaveFreeToday.org</ModalHeader>
           <ModalBody>
-           We appreciate your interest in our non-profit organization.<br/>
-           We are currently running our charitable donation through PAYPAL.COM <br/>
-           Please click on the button below to be directed to our company through PAYPAL.
+         
+           SlaveFree today is a 501c3 non-profit organization. <br/>
+           Our budget is supported solely by donations and gifts.<br/>
+            A PDF receipt for tax purposes will be emailed promptly to donor’s email. <br/>
+            Thanks for supporting SlaveFree Today.
           </ModalBody>
           <ModalFooter>
             <Button color="primary" href="https://www.paypal.me/DJshinATLANTA" target="_blank">DIRECT LINK TO SlaveFreeToday's PAYPAL Account</Button>{' '}

@@ -38,7 +38,8 @@ class SearchResults extends Component {
       handleSubmit=(e)=> {
           e.preventDefault()
         console.log("search", this.state.searchArticle)
-    this.state.articles.filter(article => {console.log(article.abstract.search(this.state.searchArticle)==1)
+    this.state.articles.filter(article => {
+        console.log(article.abstract.search(this.state.searchArticle)==1)
         
     }
     )
@@ -81,5 +82,4 @@ export default SearchResults;
 {/* <div>
 <div className="resultsS">SEARCH RESULTS</div>
 <input className='inputS' type="text"/>
-
 </div> */}
