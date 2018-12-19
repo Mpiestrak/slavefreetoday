@@ -82,7 +82,7 @@ class NavBar extends Component {
           <NavA href="/articles">ARTICLES</NavA>
           <NavA href="#">RESOURCES</NavA>
           <NavA href="/memberlist">MEMBER LIST</NavA>
-          <NavA href="#">CALENDAR</NavA>
+          <NavA href="/manuscriptinfo">SUBMIT MANUSCRIPT</NavA>
           <NavA href="#">ABOUT</NavA>
           <div>
             <Link to="/createaccount">
