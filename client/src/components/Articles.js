@@ -35,6 +35,7 @@ class Articles extends Component {
             <div className='titlelink'>{article.title}</div>
             </Link>
             
+
             <div className='authorA'>
                 {article.author}
             </div>

@@ -16,8 +16,10 @@ import SearchResults from "./components/SearchResults";
 import Tier2 from "./components/Tier2";
 import Navbar from "./components/Navbar";
 import SingleArticle from "./components/SingleArticle";
+
 import UpdateArticle from "./components/UpdateArticle";
 import ViewAccount from "./components/ViewAccount"
+
 
 
 class App extends Component {
@@ -45,7 +47,9 @@ class App extends Component {
                         
                         <Route path="/" component={Homepage}/>
                     </Switch>
+
                     <Footer />
+
                 </div>
             </Router>
         );

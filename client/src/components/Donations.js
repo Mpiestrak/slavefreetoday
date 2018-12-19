@@ -106,23 +106,14 @@ class Donations extends Component {
                                     <br/>
                                     <br/>
                                     ( e-mail us for more information.)
-
                                 </div>
-
-
                             </div>
-
-
                         </div>
-
                         <div className="subtitle">
                             Donate Your Services and/or Items
                         </div>
-
                         <div className="iconhand"></div>
-
                         <div className="listcontainer">
-
                             <div className="list">
                                 Below is a list of services needed to keep
                                 <br/>
@@ -147,10 +138,7 @@ class Donations extends Component {
                                 - need 5 <br/>
                                 - need 6
                             </div>
-
-
                         </div>
-
                         <div className="contactinfo">
                             If you’re able to donate a service or item, please contact us at <br/>
                             <br/>
@@ -158,10 +146,7 @@ class Donations extends Component {
                             <br/>
                             phone: 777-777-7777
                         </div>
-
-
                     </div>
-
                 </div>
                 <div>
 
@@ -181,10 +166,7 @@ class Donations extends Component {
                         </ModalFooter>
                     </Modal>
                 </div>
-
             </div>
-
-
         );
     }
 }

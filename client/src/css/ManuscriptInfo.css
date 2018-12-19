@@ -1,3 +1,4 @@
+
 /* .border {
     background: #97A11F;
     text-align: center;
@@ -116,6 +117,7 @@
     list-style: none;
 } */
 /* 
+
 .gridContainer {
 
     display: grid;
@@ -128,7 +130,6 @@
         "three three three three"
         "four four four four"
         "five five five five";
-
 } */
 
 /* .one {
@@ -140,23 +141,19 @@
 
 /* .two {
     grid-area: two;
-
     margin: 0 3% 2% 3%;
 
 }
 
 .three {
     grid-area: three;
-
     background: rgba(10, 35, 66, 0.2);
     margin: 0 3% 2% 3%;
 }
 
 .four {
     grid-area: four;
-
     margin: 0 3% 2% 3%;
-
 }
 
 .five {
