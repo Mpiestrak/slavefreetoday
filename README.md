@@ -54,7 +54,7 @@ https://www.figma.com/file/8EG5EjVjR8cprWhFoMWlgf/HI-FI-DESKTOP-WIRES---ALL?node
    which is in the mid-fi wireframes
  * As a user, the Donate button will link to 'donation info' screen
  * As a user, on the My Account screen, they should see several icons
- * 
+ * A user should be able to fill out a form to Create an Account.
 
 ## Future Development
 
