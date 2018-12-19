@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from .models import ViewUser, Author, Article#,Journal
+from .models import ViewUser, Author, Article
 
 
 class ArticleSerializer(serializers.ModelSerializer):

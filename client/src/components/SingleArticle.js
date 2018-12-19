@@ -1,8 +1,12 @@
 import React, { Component } from "react";
 import "../css/SingleArticle.css";
 import axios from "axios";
-import Link from "react-router-dom/es/Link";
+import Link from "react-router-dom";
 import styled from 'styled-components';
+import UpdateArticle from "./UpdateArticle";
+
+
+
 
 const Allcontainer = styled.div`
 margin: 0 5% 0 10%;
@@ -97,6 +101,7 @@ class SingleArticle extends Component {
     article: {}
   };
 
+
   componentDidMount() {
     const { id } = this.props.match.params;
     axios.get(`/api/articles/${id}`).then(res => {
@@ -121,6 +126,9 @@ class SingleArticle extends Component {
           <div>
             <Headers>{this.state.article.title}</Headers>
             <Subheader>{this.state.article.author}</Subheader>
+              {/*<Subheader>*/}
+                  {/*<Link to={`/updatearticle/${id}/`}>Article id: {this.state.article.id}</Link>*/}
+              {/*</Subheader>*/}
             <Linkcontainer>
               <Activelink href="#">
                 HTML
@@ -141,6 +149,7 @@ class SingleArticle extends Component {
           {/* <div className='sidebar'>
               <ArticleSidebar />
           </div> */}
+          <UpdateArticle {...this.props} />
         </Allcontainer>
       </div>
     );

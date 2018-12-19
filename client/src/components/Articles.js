@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import axios from "axios";
 import Link from "react-router-dom/es/Link";
 import  "../images/anti-slavery_mural.png"
-import styled from 'styled-components'
+import styled from 'styled-components';
+
 
 const Border = styled.div`
     background: #97A11F;
@@ -40,6 +41,17 @@ const Headerbutton = styled.div`
     margin: 2% 81% 0 3%;
     padding: 0 1%;
 `
+
+const Manuscriptbutton = styled.a`
+    background: rgba(10, 35, 66, 0.2);
+    border-radius: 5px 5px 0 0;
+    margin: 2% 1% 0 0;
+    padding: 1% 1%;
+    font-family: Roboto;
+    font-size: 24px;
+    text-decoration: none;
+`
+
 const Author = styled.div`
     color: black;
     text-transform: capitalize;

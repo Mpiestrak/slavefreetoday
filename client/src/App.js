@@ -16,6 +16,7 @@ import SearchResults from "./components/SearchResults";
 import Tier2 from "./components/Tier2";
 import Navbar from "./components/Navbar";
 import SingleArticle from "./components/SingleArticle";
+import UpdateArticle from "./components/UpdateArticle";
 
 class App extends Component {
     render() {
@@ -25,6 +26,8 @@ class App extends Component {
                     <Navbar/>
                     <Switch>
                         <Route exact path="/articles" component={Articles}/>
+                        <Route exact path="/updatearticle/:id" component={UpdateArticle}/>
+                        <Route exact path="/updatearticle/" component={UpdateArticle}/>
                         <Route exact path="/articles/:id" component={SingleArticle}/>
                         <Route exact path="/articleinfo" component={ArticleInfo}/>
                         <Route exact path="/createaccount" component={CreateAccount}/>
