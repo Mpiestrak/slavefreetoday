@@ -18,15 +18,15 @@ class Articles extends Component {
   render() {
     return (
       <div>
-          <div className='border'>
-            <div className='header1'>JOURNAL OF MODERN SLAVERY</div>
+          <div className='borderA'>
+            <div className='header1A'>JOURNAL OF MODERN SLAVERY</div>
             <div className='subheaderA'>A Multidisciplinary Exploration of Human Trafficking Solutions</div>
           </div>
           <div className="pic1A">
               
           </div>
 
-          <div className='headerbutton'>
+          <div className='headerbuttonA'>
               Latest Online
           </div>
         <div>
@@ -35,7 +35,7 @@ class Articles extends Component {
             <div className='titlelink'>{article.title}</div>
             </Link>
             
-            <div className='author'>
+            <div className='authorA'>
                 {article.author}
             </div>
             <div className='issuedate'>

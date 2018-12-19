@@ -1,12 +1,12 @@
 
-.border {
+.borderA {
     background: #97A11F;
     text-align: center;
     height: 150px;
     display: block;
 }
 
-.header1 {
+.header1A {
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -37,7 +37,7 @@
     border:solid;
 }
 
-.headerbutton {
+.headerbuttonA {
     background: rgba(10, 35, 66, 0.2);
     border-radius: 5px 5px 0 0;
     margin: 2% 81% 0 3%;
@@ -45,7 +45,7 @@
 
 }
 
-.author {
+.authorA {
     color: black;
     text-transform: capitalize;
     margin: 10px 0;
