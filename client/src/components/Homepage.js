@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
-
 import "../css/HomePage.css"
-
+import Link from "react-router-dom/es/Link";
 class Homepage extends Component {
     render() {
         return (
@@ -19,7 +18,7 @@ class Homepage extends Component {
                         <div className='titlemain'>JOURNAL OF MODERN SLAVERY</div>
 
                             <div className='title2'>A multidisciplinary exploration of human trafficking solutions</div>
-                            <button className='hpbutton'>Create a FREE account to access the Journal</button>
+                           <Link to="/createaccount"><button className='hpbutton'>Create a FREE account to access the Journal</button></Link> 
                         </div>
 
                         <div className='twoHP'>
@@ -29,7 +28,7 @@ class Homepage extends Component {
 
                           <div className='hpIconContain'>
 
-                          <a className='hpIconOne'>
+                          <a className='hpIconOne' href="http://slavefreetoday.org/ngos/" target="_blank">
                               <div className='iconPic'>
 
                               </div>
@@ -38,7 +37,7 @@ class Homepage extends Component {
                               </div>
 
                           </a>
-                           <a className='hpIconTwo'>
+                           <a className='hpIconTwo' href="https://www.antislavery.org/reports-and-resources/" target="_blank">
                                  <div className='iconPic2'>
 
                               </div>
@@ -46,7 +45,7 @@ class Homepage extends Component {
                                     Reports
                               </div>
                            </a>
-                            <a className='hpIconThree'>
+                            <a className='hpIconThree' href="https://www.firstresponsetraining.com/about/modern-slavery-act-2015/" target="_blank">
                                   <div className='iconPic3'>
 
                                 </div>
@@ -54,7 +53,7 @@ class Homepage extends Component {
                                     Training
                                 </div>
                             </a>
-                             <a className='hpIconFour'>
+                             <a className='hpIconFour' href="https://www.modernslaveryhelpline.org/" target="_blank">
                                    <div className='iconPic4'>
 
                               </div>
@@ -74,7 +73,7 @@ class Homepage extends Component {
 
                           <div className='hpIconContain'>
 
-                          <a className='hpIconOne'>
+                          <a className='hpIconOne' href="https://www.npr.org/search?query=modern%20slavery&page=1" target="_blank">
                               <div className='iconPic5'>
 
                               </div>
@@ -83,7 +82,7 @@ class Homepage extends Component {
                               </div>
 
                           </a>
-                           <a className='hpIconTwo'>
+                           <a href="https://www.freetheslaves.net/" target="_blank" className='hpIconTwo'>
                                  <div className='iconPic6'>
 
                               </div>
@@ -91,7 +90,7 @@ class Homepage extends Component {
                                     Blog
                               </div>
                            </a>
-                            <a className='hpIconThree'>
+                            <a href="http://slavefreetoday.org/books2/" target="_blank" className='hpIconThree'>
                                   <div className='iconPic7'>
 
                                 </div>
@@ -99,7 +98,7 @@ class Homepage extends Component {
                                     Books
                                 </div>
                             </a>
-                             <a className='hpIconFour'>
+                             <a href="http://slavefreetoday.org/documentaries/" target="_blank" className='hpIconFour' >
                                    <div className='iconPic8'>
 
                               </div>
@@ -122,20 +121,20 @@ class Homepage extends Component {
 
                           <div className='hpIconContain'>
 
-                          <a className='hpIconOne'>
+                          <a className='hpIconOne' href="http://127.0.0.1:5500/client/src/components/Calendar.html" target="_blank">
                               <div className='iconPic9'>
 
                               </div>
-                              <div className='iconLabel5'>
+                              <div className='iconLabel5' >
                                   View Events
                               </div>
 
                           </a>
-                           <a className='hpIconTwo'>
+                           <a className='hpIconTwo' href="http://127.0.0.1:5500/client/src/components/Calendar.html" target="_blank">
                                  <div className='iconPic10'>
 
                               </div>
-                                <div className='iconLabel5'>
+                                <div className='iconLabel5' >
                                     Add Events
                               </div>
                            </a>
@@ -156,7 +155,7 @@ class Homepage extends Component {
 
                           <div className='hpIconContain'>
 
-                          <a className='hpIconOne'>
+                          <a className='hpIconOne'  href="http://slavefreetoday.org/slavefree-today-ngo-board-members/" target="_blank">
                               <div className='iconPic11'>
 
                               </div>
@@ -165,7 +164,7 @@ class Homepage extends Component {
                               </div>
 
                           </a>
-                           <a className='hpIconTwo'>
+                           <a className='hpIconTwo'  href="http://slavefreetoday.org/slavefree-today-ngo-board-members/" target="_blank">
                                  <div className='iconPic12'>
 
                               </div>
@@ -185,7 +184,7 @@ class Homepage extends Component {
 
 
                     </div>
-
+                    
 
 
             </div>

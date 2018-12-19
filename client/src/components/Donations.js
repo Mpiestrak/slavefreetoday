@@ -1,7 +1,25 @@
 import React, {Component} from 'react';
 import "../css/Donations.css";
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 class Donations extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+          modal: false
+        };
+    
+        this.toggle = this.toggle.bind(this);
+      }
+    
+      toggle() {
+        this.setState({
+          modal: !this.state.modal
+        });
+      }
+    
+
+
     render() {
         return (
     <div>
@@ -10,16 +28,13 @@ class Donations extends Component {
                 <div className='title'>DONATE TODAY</div>
 
                 <div className='body'>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+                        Please click on the button below (PAYPAL) to be directed to slavefreetoday.org Payal Account.
                 </div>
-
-                <button className='button'>
-                        <div className='buttonbody'>
-                            GIVE ONLINE NOW
-                        </div>
-
-                </button>
-
+                <Button type='button' className='button'  onClick={this.toggle}>
+                
+                </Button>
+                <div className="clickhere">CLICK ABOVE</div>
+                    
                 <div className='dollarcontainer'>
 
                         <div className='dollarone'>$25</div>
@@ -151,6 +166,24 @@ class Donations extends Component {
 
 
         </div>
+        <div>
+        
+        <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
+          <ModalHeader toggle={this.toggle}>Donate to SlaveFreeToday.org</ModalHeader>
+          <ModalBody>
+         
+           SlaveFree today is a 501c3 non-profit organization. <br/>
+           Our budget is supported solely by donations and gifts.<br/>
+            A PDF receipt for tax purposes will be emailed promptly to donor’s email. <br/>
+            Thanks for supporting SlaveFree Today.
+          </ModalBody>
+          <ModalFooter>
+            <Button color="primary" href="https://www.paypal.me/DJshinATLANTA" target="_blank">DIRECT LINK TO SlaveFreeToday's PAYPAL Account</Button>{' '}
+  
+          </ModalFooter>
+        </Modal>
+      </div>
+        
 </div>         
 
 

@@ -19,6 +19,7 @@ import SingleArticle from "./components/SingleArticle";
 import UpdateArticle from "./components/UpdateArticle";
 import ViewAccount from "./components/ViewAccount"
 
+
 class App extends Component {
     render() {
         return (
@@ -41,6 +42,7 @@ class App extends Component {
                         <Route exact path="/viewaccount/:userId" component={ViewAccount}/>
                         <Route exact path="/searchresults" component={SearchResults}/>
                         <Route exact path="/tier2" component={Tier2}/>
+                        
                         <Route path="/" component={Homepage}/>
                     </Switch>
                     <Footer />

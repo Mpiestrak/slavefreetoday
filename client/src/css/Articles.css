@@ -1,79 +1,12 @@
-/* .border{
-    border:solid;
-     display:flex;
-     justify-content: center;
-    
-    }
-    
-    .header{
-     width: 750px;
-    height: 29px;
-    
-    
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    line-height: normal;
-    font-size: 24px;
-    
-    }
-    
-    .gridContainer{
-    
-     display: grid;
-     grid-template-columns: 1fr 1fr 1fr 1fr;
-     grid-template-rows: 350px 300px 300px 300px 400px ;
-     grid-template-areas:
-    
-       "one one one one"
-       "two two two two"
-       "three three three three"
-       "four four four four"
-       "five five five five";
-    
-    }
-    
-    .one{
-     grid-area: one;
-     border:solid;
-     background-image: url("./images/hpbanner.png");
-     background-size: 100% 100%;
-    
-    }
-    
-    .two{
-      grid-area: two;
-     border:solid;
-     background: rgba(10, 35, 66, 0.4);
-    }
-    
-    .three{
-      grid-area: three;
-      border:solid;
-    }
-    
-    .four{
-      grid-area: four;
-      border:solid;
-     background: rgba(10, 35, 66, 0.4);
-    }
-    
-    .five{
-      grid-area: five;
-      border:solid;
-    
-    } */
 
-
-
-/* .border {
+.border {
     background: #97A11F;
     text-align: center;
     height: 150px;
     display: block;
-} */
+}
 
-/* .header1 {
+.header1 {
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -81,34 +14,38 @@
     font-size: 36px;
     color: #FFFFFF;
     padding-top: 4%;
-} */
+}
 
-/* .subheader {
+.subheaderA{
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     line-height: normal;
     font-size: 24px;
+    text-align: center;
+    
     color: #FFFEF9;
-} */
+}
 
-/* .articlecontainer {
+.articlecontainer {
     margin: 0 3% 2% 3%;
     border-radius: 0;
     padding: 2% 1%;
     background: rgba(10, 35, 66, 0.2);
-    max-height: 20vh;
-} */
+    height: 350px;
+    max-height: 700px;
+    border:solid;
+}
 
-/* .headerbutton {
+.headerbutton {
     background: rgba(10, 35, 66, 0.2);
     border-radius: 5px 5px 0 0;
     margin: 2% 81% 0 3%;
     padding: 0 1%;
 
-} */
+}
 
-/* .author {
+.author {
     color: black;
     text-transform: capitalize;
     margin: 10px 0;
@@ -118,18 +55,18 @@
     font-style: normal;
     font-size: 16px;
     line-height: normal;
-} */
+}
 
-/* .issuedate {
+.issuedate {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     line-height: normal;
     font-size: 20px;
     border-radius: inherit;
-} */
+}
 
-/* .abstract {
+.abstract {
     color: black;
     text-transform: capitalize;
     margin: 10px 0;
@@ -137,13 +74,12 @@
     font-family: Open Sans;
     font-weight: 300;
     font-style: normal;
-    font-size: 18px;
+    font-size: 15px;
     line-height: normal;
     max-height: 20vh;
+}
 
-} */
-
-/* .titlelink {
+.titlelink {
     text-transform: capitalize;
     text-decoration: none;
     color: black;
@@ -154,9 +90,9 @@
     font-size: 20px;
     border-radius: inherit;
 
-} */
+}
 
-/* 
+
 .bottomlink {
     display: flex;
     justify-content: space-between;
@@ -171,4 +107,11 @@
     font-weight: normal;
     line-height: normal;
     font-size: 18px;
-} */
+}
+.pic1A{
+    border:solid;
+    height:400px;
+    width:100vw;
+    background-image: url('../images/anti-slavery_mural.png');
+    background-size: 100% 100%;
+}

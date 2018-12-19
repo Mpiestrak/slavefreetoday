@@ -2,10 +2,13 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import axios from "axios";
 import styled from 'styled-components'
-import email from '../images/Email.png'
-import linkedin from '../images/LinkedIn.png'
+
+import "../css/MemberList.css";
 
 
+const Author = styled.div `
+text-align: left;
+`
 
 
 
@@ -33,38 +36,36 @@ class MemberList extends Component {
 
     render() {
         return (
-            <div>
-
-                <h1>Member Directory</h1>
-                <div>
+            <div className='allML'>
+                <div className="headerML">MEMBER DIRECTORY</div>
                 {this.state.authors.map((author) => (
-                    <div key={author.id}>
+                <div className="mainContainML" key={author.id}>
+                    
+                <img src={author.img} alt="" className="profilepicML" />
+                <div className="infoboxML">
+                <h2 className='nameML'>{author.first_name} {author.last_name}</h2>
 
-                        <Link to={`/authoraccount/${author.id}`}>
-                            <img src={"Profile pic here"} />
-                        </Link>
-                        <div>
-                            <h2>{author.first_name} {author.last_name}</h2>
-                            <h2>{author.organization}</h2>
+                <div className="iconflexML">
+                <a href='mailto:{author.email}'>
+                <div  className="mailML" ></div>
+                </a>
+                <a href='https://www.linkedin.com/in/{author.first_name}{author.last_name}/{'>
+                <div  className="linkedML" ></div>
+                </a>
 
-                            <p>{author.description}</p>
-
-                            <a href={author.email}>
-                            <img src={email}/>
-                            </a>
-
-                            <img src={linkedin} />
-
-                        </div>
-
-                            <hr />
-                            <br />
-                    </div>
-
-                ))}
                 </div>
 
+                <h4>{author.organization}</h4>
 
+                <p className="paraML">{author.description}</p>
+
+                </div>
+                
+                
+                
+                
+                </div>
+                 ))}
             </div>
 
         );
