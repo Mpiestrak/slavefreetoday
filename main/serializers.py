@@ -1,12 +1,12 @@
 from rest_framework import serializers
 
-from .models import ViewUser, Author, Article#,Journal
+from .models import ViewUser, Author, Article
 
 
 class ArticleSerializer(serializers.ModelSerializer):
     class Meta:
         model = Article
-        fields = ('title', 'categories', 'tags', 'issuedate', 'groups', 'hits', 'author')
+        fields = ('id', 'title', 'categories', 'tags', 'issuedate', 'groups', 'hits', 'author', 'abstract', 'content')
 
 
 class AuthorSerializer(serializers.ModelSerializer):
@@ -14,11 +14,11 @@ class AuthorSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Author
-        fields = ('first_name', 'last_name', 'email', 'password', 'organization', 'description', 'article')
+        fields = ('id', 'first_name', 'last_name', 'email', 'password', 'organization', 'description', 'article', 'img')
 
 
 class ViewUserSerializer(serializers.ModelSerializer):
     class Meta:
         model = ViewUser
-        fields = ('first_name', 'last_name', 'email', 'password')
+        fields = ('id', 'first_name', 'last_name', 'email', 'password')
 

@@ -1,4 +1,9 @@
 
+.totalcontainer{
+    height: 225vh;
+
+}
+
 .box1{
     height:800px;
     width:100vw;
@@ -30,9 +35,7 @@ text-align: center;
 
 .body{
     width: 670px;
-height: 207px;
-
-
+height: 100px;
 font-family: Open Sans;
 font-style: normal;
 font-weight: normal;
@@ -43,29 +46,28 @@ text-align: center;
     color: #0A2342;
     margin-top:20px;
 }
-.button {
+
+.buttonD {
     width: 325px;
     height: 82px;
-    background: #FFFFFF;
+    background:white;
     border: 2px solid #0A2342;
- margin-left: 420px;
+    margin-left: 38%;
     border-radius: 10px;
-
+    background-image: url(../images/paypal.png);
+    background-size: 100% 100%;
 }
-.buttonbody{
-    width: 300px;
-height: 29px;
-
-font-family: Roboto;
+.clickhere{
+  margin-top:15px;
+   text-align: center;
+   font-family: Roboto;
 font-style: normal;
 font-weight: bold;
 line-height: normal;
-font-size: 24px;
-
+font-size: 36px;
 color: #0A2342;
-
-border-radius: 10px;
 }
+
 .dollarcontainer{
     display:flex;
     justify-content: space-around;

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import Link from "react-router-dom/es/Link";
-import  "../images/anti-slavery_mural.png"
+import "../css/Articles.css"
 
 class Articles extends Component {
   state = {
@@ -18,14 +18,15 @@ class Articles extends Component {
   render() {
     return (
       <div>
-          <div className='border'>
-            <div className='header1'>JOURNAL OF MODERN SLAVERY</div>
-            <div className='subheader'>A Multidisciplinary Exploration of Human Trafficking Solutions</div>
+          <div className='borderA'>
+            <div className='header1A'>JOURNAL OF MODERN SLAVERY</div>
+            <div className='subheaderA'>A Multidisciplinary Exploration of Human Trafficking Solutions</div>
           </div>
-          <div className='carousel'>
-              <img src="#" alt="Anti Slavery Mural"/>
+          <div className="pic1A">
+              
           </div>
-          <div className='headerbutton'>
+
+          <div className='headerbuttonA'>
               Latest Online
           </div>
         <div>
@@ -34,7 +35,8 @@ class Articles extends Component {
             <div className='titlelink'>{article.title}</div>
             </Link>
             
-            <div className='author'>
+
+            <div className='authorA'>
                 {article.author}
             </div>
             <div className='issuedate'>
@@ -44,15 +46,15 @@ class Articles extends Component {
                 {article.abstract}
             </div>
             <div className='bottomlink'>
-                <div className='blink'>
+                <a className='blink'>
                     Abstract
-                </div>
-                <div className='blink'>
-                    WEB
-                </div>
-                <div className='blink'>
+                </a>
+                <a className='blink'>
+                    Web
+                </a>
+                <a className='blink'>
                     PDF
-                </div>
+                </a>
             </div>
             </div>
           ))}

@@ -25,3 +25,10 @@ urlpatterns = [
     url(r'^$', views.FrontendAppView.as_view()) #New URL for the index route
 ]
 
+REACT_ROUTES = ['articles', 'createaccount']
+
+for route in REACT_ROUTES:
+    urlpatterns += [
+        path(f'{route}', views.FrontendAppView.as_view())
+    ]
+

@@ -1,7 +1,14 @@
 import React, {Component} from 'react';
 import {Link} from "react-router-dom";
 import axios from "axios";
-import NavBar from "./Navbar";
+import styled from 'styled-components'
+
+import "../css/MemberList.css";
+
+
+const Author = styled.div`
+text-align: left;
+`
 
 
 class MemberList extends Component {
@@ -12,12 +19,11 @@ class MemberList extends Component {
     };
 
 
-
-         //Call the user and set the state to the data received in response
+    //Call the user and set the state to the data received in response
     getAllAuthors() {
-        axios.get("/api/authors").then(res => {
+        axios.get(`/api/authors`).then(res => {
             console.log(res.data)
-            this.setState({ authors: res.data })
+            this.setState({authors: res.data})
         })
     }
 
@@ -27,24 +33,37 @@ class MemberList extends Component {
 
     render() {
         return (
-            <div>
-            <h1>Member Directory</h1>
-                {this.state.authors.map((author)=> (
-                    <div key={author.id}>
-                        <img src={"Profile pic here"}/>
-                        <h2>{author.first_name} {author.last_name}</h2>
-                        <h2>{author.organization}</h2>
-                        <h3>{author.email}</h3>
-                        <img src={"Email icon here"}/>
-                        <img src={"LinkedIn icon here"}/>
-                        {/*We need to download these images*/}
-                        <hr/>
-                        <br/>
+            <div className='allML'>
+                <div className="headerML">MEMBER DIRECTORY</div>
+                {this.state.authors.map((author) => (
+                    <div className="mainContainML" key={author.id}>
+
+                        <Link to={`/authoraccount/${author.id}`}>
+                            <img src={author.img} alt="" className="profilepicML"/>
+                        </Link>
+                        <div className="infoboxML">
+                            <Link to={`/authoraccount/${author.id}`}>
+                                <h2 className='nameML'>{author.first_name} {author.last_name}</h2>
+                            </Link>
+                            <div className="iconflexML">
+                                <a href='mailto:{author.email}'>
+                                    <div className="mailML"></div>
+                                </a>
+                                <a href='https://www.linkedin.com/in/{author.first_name}{author.last_name}/{'>
+                                    <div className="linkedML"></div>
+                                </a>
+
+                            </div>
+
+                            <h4>{author.organization}</h4>
+
+                            <p className="paraML">{author.description}</p>
+
+                        </div>
+
+
                     </div>
                 ))}
-
-
-
             </div>
 
         );

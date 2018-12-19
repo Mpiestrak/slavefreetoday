@@ -20,10 +20,10 @@ class Author(models.Model):
     organization = models.CharField(max_length=100, blank=True)
     description = models.TextField(blank=True)
     img = models.URLField(blank=True)
+    linkedin = models.URLField(blank=True)
 
     def __str__(self):
         return self.last_name
-
 
 
 class Article(models.Model):

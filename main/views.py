@@ -4,7 +4,7 @@ from django.shortcuts import render
 
 from rest_framework import viewsets
 
-from .serializers import ArticleSerializer, AuthorSerializer, ViewUserSerializer#, JournalSerializer
+from .serializers import ArticleSerializer, AuthorSerializer, ViewUserSerializer
 from .models import Article, Author, ViewUser
 
 
