@@ -2,7 +2,10 @@
 
 ## Project #4: Final Project (UX/WD Collab Group Variant)
 
+## NOTE: The master branch is not up to date. MP2branch is what is pushed to Heroku.
+
 ## Overview
+
 
 *   Journal of Modern Slavery: A Multidisciplinary Exploration of Human Trafficking Solutions is dedicated to research, theory, and practical application in eradicating slavery. It is a nexus of critical thought for all fields relating to understanding and combating modern slavery and is unique in its focus on the issues of slavery and human trafficking.
 
