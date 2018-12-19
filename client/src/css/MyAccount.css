@@ -1,0 +1,14 @@
+.AccountDiv{
+    display: flex;
+    justify-content: space-evenly;
+    background: linear-gradient(180deg, rgba(151, 161, 31, 0.6) 0%, rgba(151, 161, 31, 0) 100%);
+    padding: 120px 0px 0px 0px;
+}
+
+
+.Options{
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    grid-template-rows: repeat(2, 250px);
+    grid-gap: 10px;
+}

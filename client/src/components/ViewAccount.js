@@ -1,13 +1,8 @@
 import React, { Component } from 'react';
 import axios from "axios";
-import styled from 'styled-components'
 import settings from '../images/Settings.png'
-import view from '../images/View.png'
-import {Link} from "react-router-dom";
-import memberlist from "../images/Directory.png";
 import bookmark from "../images/Bookmark.png";
 import donations from "../images/Money.png";
-import manuscript from "../images/Paper_Scroll.png";
 import review from "../images/Reviewer.png";
 
 
@@ -50,12 +45,17 @@ class ViewAccount extends Component {
      render() {
 
         return (
-            <div>
+            <div className="AccountDiv">
+
                 <div>
                     <h1>My Account</h1>
                     <img src={"Profile pic here"} />
 
-                    <p>{this.state.user.first_name}</p>
+                    <p>{this.state.user.first_name} {this.state.user.last_name}</p>
+
+                    <button onClick={this.deleteViewUser}>
+                    DELETE THIS USER
+                </button>
                 </div>
 
                 <div>
@@ -65,25 +65,19 @@ class ViewAccount extends Component {
                         <img src={settings} />
                     </div>
 
-                    {/*/!*Kinda useless?*!/*/}
+                    {/*Cool, but we can't save anything right now*/}
                     {/*<div>*/}
-                        {/*<h2>View Profile</h2>*/}
-                        {/*<img src={view} />*/}
+                        {/*<h2>Saved Resources</h2>*/}
+                        {/*<img src={bookmark} />*/}
                     {/*</div>*/}
 
-                    {/*Cool, but we can't save anything right now*/}
-                    <div>
-                        <h2>Saved Resources</h2>
-                        <img src={bookmark} />
-                    </div>
-
-                    {/*Link to donations*/}
+                    {/*DONATIONS*/}
                     <div>
                         <h2>Donations</h2>
                         <img src={donations} />
                     </div>
 
-                    {/*This is a portal to upgrade account--not ready yet*/}
+                    {/*UPGRADE ACCOUNT*/}
                     <div>
                         <h2>Become A Reviewer</h2>
                         <img src={review} />
@@ -91,10 +85,6 @@ class ViewAccount extends Component {
 
                 </div>
 
-
-<button onClick={this.deleteViewUser}>
-                    DELETE THIS USER
-                </button>
 
             </div>
         );
