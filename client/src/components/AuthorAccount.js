@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
 import axios from "axios";
 import { Link } from "react-router-dom";
-import styled from 'styled-components'
 import settings from '../images/Settings.png'
-import view from '../images/View.png'
 import memberlist from '../images/Directory.png'
 import bookmark from '../images/Bookmark.png'
 import donations from '../images/Money.png'
 import manuscript from '../images/Paper_Scroll.png'
-import review from '../images/Reviewer.png'
+import '../css/MyAccount.css'
 
 
 axios.defaults.xsrfCookieName = 'csrftoken'
@@ -21,16 +19,17 @@ class AuthorAccount extends Component {
         author: {}
     };
 
-    // getAnAuthor() {
-    //
-    // }
-
-    componentDidMount() {
- const author = this.props.match.params.authorId
+    getAnAuthor() {
+        const author = this.props.match.params.authorId
         axios.get(`/api/authors/${author}`).then(res => {
             this.setState({ author: res.data });
             console.log(res.data);
-        });    }
+        });
+    }
+
+    componentDidMount() {
+        this.getAnAuthor()
+    }
 
 
     deleteAuthor = () => {
@@ -46,54 +45,51 @@ class AuthorAccount extends Component {
     render() {
 
         return (
-            <div>
-                <div>
+            <div className="AccountDiv">
+
+                <div className="Profile">
                     <h1>My Account</h1>
-                    <img src={"Profile pic here"} />
+                    <img src={this.state.author.img} />
 
+                    <p>{this.state.author.first_name} {this.state.author.last_name}</p>
 
-                    <p>{this.state.author.first_name}</p>
+                    <button onClick={this.deleteAuthor}>
+                    DELETE THIS USER
+                </button>
                 </div>
 
+            <div className="Options">
                 <div>
-                    <h2>Settings</h2>
+                    <h2>Update</h2>
                     <img src={settings} />
                 </div>
 
-                <div>
-                    <h2>View Profile</h2>
-                    <img src={view} />
-                </div>
 
+                {/*MEMBERLIST*/}
                 <div>
                     <Link to={'/memberlist'}><h2>Member Directory</h2></Link>
                     <img src={memberlist} />
                 </div>
 
-                <div>
-                    <h2>Saved Resources</h2>
-                    <img src={bookmark} />
-                </div>
+                {/*<div>*/}
+                    {/*<h2>Saved Resources</h2>*/}
+                    {/*<img src={bookmark} />*/}
+                {/*</div>*/}
 
                 <div>
                     <h2>Donations</h2>
                     <img src={donations} />
                 </div>
 
+                {/*SUBMIT A MANUSCRIPT*/}
                 <div>
                     <h2>Submit A Manuscript</h2>
                     <img src={manuscript} />
                 </div>
-
-                <div>
-                    <h2>Become A Reviewer</h2>
-                    <img src={review} />
-                </div>
+            </div>
 
 
- <button onClick={this.deleteAuthor}>
-                    DELETE THIS USER
-                </button>
+
             </div>
         );
     }
