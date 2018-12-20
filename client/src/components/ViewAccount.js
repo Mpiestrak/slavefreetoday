@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from "axios";
+import { Link } from "react-router-dom";
 import settings from '../images/Settings.png'
 import bookmark from "../images/Bookmark.png";
 import donations from "../images/Money.png";
@@ -75,8 +76,10 @@ class ViewAccount extends Component {
 
                     {/*DONATIONS*/}
                     <div>
+                        <Link to={'/donations'}>
                         <h2>Donations</h2>
                         <img src={donations} />
+                        </Link>
                     </div>
 
                     {/*UPGRADE ACCOUNT*/}
@@ -88,7 +91,7 @@ class ViewAccount extends Component {
                 </div>
 
 
-            </div>
+            </div>` `
         );
     }
 }

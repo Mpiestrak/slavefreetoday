@@ -67,8 +67,10 @@ class AuthorAccount extends Component {
 
                 {/*MEMBERLIST*/}
                 <div>
-                    <Link to={'/memberlist'}><h2>Member Directory</h2></Link>
-                    <img src={memberlist} />
+                    <Link to={'/memberlist'}>
+                        <h2>Member Directory</h2>
+                        <img src={memberlist} />
+                    </Link>
                 </div>
 
                 {/*<div>*/}
@@ -76,15 +78,19 @@ class AuthorAccount extends Component {
                     {/*<img src={bookmark} />*/}
                 {/*</div>*/}
 
-                <div>
-                    <h2>Donations</h2>
-                    <img src={donations} />
-                </div>
+                 <div>
+                        <Link to={'/donations'}>
+                        <h2>Donations</h2>
+                        <img src={donations} />
+                        </Link>
+                    </div>
 
                 {/*SUBMIT A MANUSCRIPT*/}
                 <div>
+                    <Link to={'/manuscriptinfo'}>
                     <h2>Submit A Manuscript</h2>
                     <img src={manuscript} />
+                    </Link>
                 </div>
             </div>
 

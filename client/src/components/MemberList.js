@@ -35,6 +35,7 @@ class MemberList extends Component {
         return (
             <div className='allML'>
                 <div className="headerML">MEMBER DIRECTORY</div>
+
                 {this.state.authors.map((author) => (
                     <div className="mainContainML" key={author.id}>
 
@@ -46,10 +47,10 @@ class MemberList extends Component {
                                 <h2 className='nameML'>{author.first_name} {author.last_name}</h2>
                             </Link>
                             <div className="iconflexML">
-                                <a href='mailto:{author.email}'>
+                                <a href={`mailto:${author.email}`}>
                                     <div className="mailML"></div>
                                 </a>
-                                <a href='https://www.linkedin.com/in/{author.first_name}{author.last_name}/{'>
+                                <a href='https://www.linkedin.com/in/{author.first_name}{author.last_name}/'>
                                     <div className="linkedML"></div>
                                 </a>
 
